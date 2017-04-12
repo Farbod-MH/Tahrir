@@ -6,6 +6,7 @@
 <!-- <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
 <link rel="stylesheet" href="_css/jasny-bootstrap.min.css">
 <link rel="stylesheet" href="_css/bootstrap-select.min.css">
+<link rel="stylesheet" href="_css/persian-datepicker.css">
 <link rel="stylesheet" href="_css/style.css">
 
 <!--[if lt IE 9]>
