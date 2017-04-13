@@ -2,11 +2,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="_css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="_css/bootstrap-rtl.min.css">
 <!-- <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
 <link rel="stylesheet" href="_css/jasny-bootstrap.min.css">
 <link rel="stylesheet" href="_css/bootstrap-select.min.css">
-<link rel="stylesheet" href="_css/persian-datepicker.css">
+<link rel="stylesheet" href="_css/persian-datepicker.min.css">
 <link rel="stylesheet" href="_css/style.css">
 
 <!--[if lt IE 9]>

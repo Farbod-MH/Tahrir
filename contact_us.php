@@ -19,13 +19,13 @@
                     <div class="col-md-12 box social border shadow">
                         <div class="row">
                             <div class="col-xs-4 instagram-icon">
-                                <a href="#"> <img src="_img/_svg/instagram.svg" alt="instagram" class="img-responsive"></a>
+                                <a href="#" title="اینستاگرام"> <img src="_img/_svg/instagram.svg" alt="instagram" class="img-responsive"></a>
                             </div>
                             <div class="col-xs-4 mail-icon">
-                                <a href="#"> <img src="_img/_svg/mail.svg" alt="email" class="img-responsive"></a>
+                                <a href="#" title="ایمیل"> <img src="_img/_svg/mail.svg" alt="email" class="img-responsive"></a>
                             </div>
                             <div class="col-xs-4 telegram-icon">
-                                <a href="#"> <img src="_img/_svg/telegram.svg" alt="telegram" class="img-responsive"></a>
+                                <a href="#" title="تلگرام"> <img src="_img/_svg/telegram.svg" alt="telegram" class="img-responsive"></a>
                             </div>
                         </div>
                     </div>

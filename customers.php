@@ -18,27 +18,27 @@
 			</p>
 			<div class="col-md-12">
 			<div class="row">
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
-				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#"><img src="_img/logo.png" alt="logo"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
+				<div class="col-lg-2 col-md-3 col-xs-4"><a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a></div>
 			</div>
 			</div>
               </div>

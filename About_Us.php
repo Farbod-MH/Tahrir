@@ -20,13 +20,13 @@
                  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 logo-container">
                      <div class="row">
                          <div class="col-xs-4">
-                             <a href="#"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
+                             <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
                          </div>
                          <div class="col-xs-4">
-                             <a href="#"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
+                             <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
                          </div>
                          <div class="col-xs-4">
-                             <a href="#"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
+                             <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
                          </div>
                      </div>
                  </div>
