@@ -1,10 +1,11 @@
 <header>
-	<nav id="sidebar" class=" sidebar navmenu navmenu-default navbar-default navmenu-fixed-right offcanvas-sm">
+	<nav id="sidebar" class="sidebar navmenu navmenu-default navbar-default navmenu-fixed-right offcanvas-sm">
 		<div class="sidebar-container"><!-- firefox bug -->
 			<div class="row">
 				<div class="navbar-header navmenu-brand visible-md visible-lg">
-					<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
-					<a href="#"></a>
+					<a href="price.php" title="تحریر سنتر">
+						<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
+					</a>
 				</div>
 			</div>
 			<div class="row">
@@ -26,7 +27,7 @@
 				</div>
 				<div class="col-xs-12">
 					<p class="user-budget"> ۵۰،۵۵۵،۵۵۵ ریال
-						<a href="#" title="افزودن به موجودی"><img src="_img/_svg/add.svg" alt="adding to budget"></a>
+						<a href="add_account.php" title="افزودن به موجودی"><img src="_img/_svg/add.svg" alt="adding to budget"></a>
 					</p>
 				</div>
 			</div> -->
@@ -70,15 +71,15 @@
 				</li>
 				<li>
 					<span class="list-item-icon invoice-search-icon"></span>
-					<a title="بررسی فاکتور" href="#">بررسی فاکتور<span class="arrow-right"></span></a>
+					<a title="بررسی فاکتور" href="invoice_search.php">بررسی فاکتور<span class="arrow-right"></span></a>
 				</li>
 				<li>
 					<span class="list-item-icon contract-search-icon"></span>
-					<a title="بررسی قرارداد" href="#">بررسی قرارداد<span class="arrow-right"></span></a>
+					<a title="بررسی قرارداد" href="contract_search.php">بررسی قرارداد<span class="arrow-right"></span></a>
 				</li>
 				<li>
 					<span class="list-item-icon contract-icon"></span>
-					<a title="عقد قرارداد" href="#">عقد قرارداد<span class="arrow-right"></span></a>
+					<a title="عقد قرارداد" href="contract.php">عقد قرارداد<span class="arrow-right"></span></a>
 				</li>
 			</ul>
 			<!-- -->
@@ -130,15 +131,14 @@
 		</div><!-- sidebar container -->
 	</nav><!-- nav id=#sidebar -->
 	<!-- navbar header for viewports smaller than 992px -->
-	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg shadow">
 		<div class="navbar-header navmenu-brand">
 			<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
+			    <img src="_img/hamburger-menu.png" alt="">
 			  </button>
-			<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
-			<a title="" href="#"></a>
+			<a title="نحریر سنتر" href="price.php">
+				<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
+			</a>
 		</div><!-- navbar header -->
 	</div><!-- navbar -->
 	<!-- -->

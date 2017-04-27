@@ -22,10 +22,10 @@
 
 
 /*general rules*/
-
+/*
 html, body {
     height: 100%;
-}
+}*/
 
 body {
     background-color: #f5f5f5;
@@ -34,6 +34,7 @@ body {
     font-weight: 200;
     color: #484848;
     padding: 70px 0 0 0;
+    height: 100%;
 }
 
 .container {
@@ -50,44 +51,35 @@ h1, h2, h3, h4 {
     width: 6px;
     height: 6px;
 }
-
 ::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #003366;
     border: 0px solid #ffffff;
     border-radius: 71px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #003366;
 }
-
 ::-webkit-scrollbar-thumb:active {
     background: #003366;
 }
-
 ::-webkit-scrollbar-track {
     background: #ebebeb;
     border: 0px none #ffffff;
     border-radius: 0px;
 }
-
 ::-webkit-scrollbar-track:hover {
     background: #ebebeb;
 }
-
 ::-webkit-scrollbar-track:active {
     background: #ebebeb;
 }
-
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
-
 
 /***************************************************************/
 
@@ -111,6 +103,7 @@ h1, h2, h3, h4 {
     position: fixed;
     top: 0;
     padding-right: 5px;
+    overflow-x: hidden;
 }
 
 .canvas-slid {
@@ -146,7 +139,15 @@ h1, h2, h3, h4 {
     float: left;
     display: block;
     margin: 14px 15px;
-    padding: 13px 14px;
+    padding: 8px 14px;
+    border: none;
+
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-default {
@@ -301,7 +302,10 @@ nav.navbar a {
     margin-top: 25px;
 }
 
-.nav .open>a, .nav.nav-stacked>li>a:hover, .nav .open>a:focus, .nav>li>a:focus {
+.nav .open>a,
+.nav.nav-stacked>li>a:hover,
+.nav .open>a:focus,
+.nav>li>a:focus {
     background-color: #ffffff;
     color: #003366;
 }
@@ -332,6 +336,7 @@ nav.navbar a {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 0;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .dropdown-menu>li {
@@ -367,8 +372,8 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     background-image: url(../_img/_svg/arrow-right.svg);
     background-repeat: no-repeat;
     background-position-y: 4px;
-    -webkit-transition: all 300ms 0s ease-in-out;
-    transition: all 300ms 0s ease-in-out;
+    -webkit-transition: all 200ms 0s ease-in-out;
+    transition: all 200ms 0s ease-in-out;
 }
 .arrow-left {
     display: inline-block;
@@ -492,7 +497,7 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 }
 
 .address {
-    height: 250px;
+    height: 270px;
     padding: 20px 60px;
     margin: 50px auto 0;
 }
@@ -551,12 +556,16 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     margin: 0 auto 50px;
 }
 
+.contact-us .col-md-6:first-child {
+    margin-bottom: 29px;
+}
+
 .contact {
     padding: 40px 25px;
 }
 
 .contact form {
-    height: 261px;
+    height: 281px;
 }
 
 .form-control {
@@ -564,30 +573,31 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     border-radius: 5px;
 }
 
-.contact .form-control::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge*/
+.contact .form-control::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge*/
     color: #003366;
 }
 
-.contact .form-control:-moz-placeholder, .contact textarea:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #003366;
-    opacity: 0.7;
-}
-
-.contact .form-control::-moz-placeholder, .contact textarea::-moz-placeholder {
-    /* Mozilla Firefox 19+*/
+.contact .form-control:-moz-placeholder,
+.contact textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #003366;
     opacity: 0.7;
 }
 
-.contact .form-control:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
-    /* Internet Explorer 10-11*/
+.contact .form-control::-moz-placeholder,
+.contact textarea::-moz-placeholder { /* Mozilla Firefox 19+*/
+    color: #003366;
+    opacity: 0.7;
+}
+
+.contact .form-control:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder { /* Internet Explorer 10-11*/
     color: #003366;
 }
 
 textarea.form-control {
     max-width: 100%;
+    resize: none;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -622,7 +632,7 @@ textarea.form-control {
 .logo-container {
     position: absolute;
     bottom: -40px;
-    left: 0;
+    left: 10px;
 }
 
 .about-us-page img {
@@ -635,7 +645,7 @@ textarea.form-control {
 
 h2.page-title {
     font-size: 42px;
-    margin: -64px -20px 40px 0;
+    margin: -64px -32px 40px 0;
     font-weight: 500;
 }
 
@@ -643,6 +653,8 @@ h3.page-title {
     font-size: 38px;
     font-weight: 500;
     margin: -50px 0 45px;
+    position: relative;
+    z-index: 200;
 }
 /***********************************************/
 
@@ -651,15 +663,19 @@ h3.page-title {
 
 
 /***********************************************/
-.page-rules p {
+.page-rules p,
+.contract .col-md-6 p {
     font-size: 16px;
     padding: 0 30px;
 }
 
-.page-rules .box {
+.page-rules .box-container {
     padding: 20px 0 40px 0;
     margin-bottom: 100px;
     margin-top: 50px;
+}
+.page-rules .col-md-12:last-child .box-container {
+    margin-bottom: 50px;
 }
 /***********************************************/
 
@@ -670,10 +686,11 @@ h3.page-title {
 /***********************************************/
 
 .customers {
-    background-color: #ffffff;
-    margin: 50px auto 100px;
+    margin: 50px auto;
 }
-
+.customers .box-container {
+    padding: 20px;
+}
 .customers .page-title {
     text-shadow: none;
     text-align: center;
@@ -686,8 +703,13 @@ h3.page-title {
     font-size: 20px;
 }
 
-.customers .col-lg-2, .customers .col-md-3, .customers .col-xs-4 {
+.customers .col-lg-2,
+.customers .col-md-3,
+.customers .col-xs-4 {
     margin-bottom: 20px;
+}
+.customers .img-responsive {
+    margin: 0 auto;
 }
 
 
@@ -699,11 +721,13 @@ h3.page-title {
 
 /****************************************/
 
-.bootstrap-select>.dropdown-toggle.btn-default, .bootstrap-select>.dropdown-toggle {
-    padding-right: 65px;
+.bootstrap-select>.dropdown-toggle.btn-default,
+.bootstrap-select>.dropdown-toggle {
+    padding-right: 100px;
     background-color: #f8f8f8;
     border-color: #003366;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 .bootstrap-select.btn-group .dropdown-menu.inner {
@@ -713,17 +737,37 @@ h3.page-title {
     position: relative;
 }
 
-.open.bootstrap-select>.dropdown-toggle.btn-default {
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
+.open.bootstrap-select>.dropdown-toggle.btn-default::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom:1px solid #003366;
 }
 
-.btn-default:active:hover, .btn-default.active:hover, .open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, .btn-default.focus:active, .btn-default.active.focus, .open>.dropdown-toggle.btn-default.focus {
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default.focus:active,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus {
     background-color: #f8f8f8;
     border-color: #003366;
 }
 
-.price .btn-group.open .dropdown-toggle, .price .btn-group.open .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+.open.bootstrap-select>.dropdown-toggle.btn-default {
+    border-bottom: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+}
+
+.price .btn-group.open .dropdown-toggle,
+.price .btn-group.open .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -740,15 +784,23 @@ h3.page-title {
     left: 12px;
     right: auto;
     color: #003366;
-    transition: all;
+    -webkit-transition: all 100ms 0s ease-in-out;
+    transition: all 100ms 0s ease-in-out;
+}
+
+.bootstrap-select.btn-group.open .dropdown-toggle .caret {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .price .top-bar {
     padding: 15px;
     margin: 50px 0 15px;
 }
+
 .price .top-bar .col-md-3 {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    max-width: 290px;
 }
 
 .price .form-group {
@@ -772,14 +824,40 @@ h3.page-title {
 .datepicker {
     width: 100%;
     height: 34px;
+    font-weight: 500;
+    color: #333 !important;
+}
+
+.datepicker-selected {
+    border-bottom: none !important;
+    border-radius: 5px 5px 0px 0px !important;
+}
+
+.datepicker-container::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom:1px solid #003366;
+}
+
+.datepicker:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-datepicker {
+    width: 260px;
 }
 
 .select-text-datepicker {
     font-size: 10px;
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: 18px;
+    top: 9px;
+    right: 22px;
     font-weight: 500;
 }
 
@@ -795,9 +873,6 @@ table {
     width: 25px;
 }
 
-.table-container {
-    padding: 0;
-}
 .col-md-6.table-container {
     margin-bottom: 20px;
 }
@@ -807,14 +882,25 @@ table {
     margin-bottom: 0;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
     vertical-align: middle;
 }
 
-.table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>th,
+.table>thead:first-child>tr:first-child>th,
+.table>caption+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>td,
+.table>thead:first-child>tr:first-child>td {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     position: relative;
+    background-color: #f8f8f8;
 }
 .table > thead > tr >th::after {
     position: absolute;
@@ -849,12 +935,157 @@ table {
     border-color: #003366;
     border-radius: 5px;
 }
-.pagination li:first-child a , .pagination li:last-child a {
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+.pagination li:first-child a,
+.pagination li:last-child a {
     border: none;
 }
-.pagination>li:first-child>a:hover, .pagination>li:first-child>span:hover, .pagination>li:first-child>a:focus, .pagination>li:first-child>span:focus ,
-.pagination>li:last-child>a:hover, .pagination>li:last-child>span:hover, .pagination>li:last-child>a:focus, .pagination>li:last-child>span:focus {
+.pagination>li:first-child>a:hover,
+.pagination>li:first-child>span:hover,
+.pagination>li:first-child>a:focus,
+.pagination>li:first-child>span:focus,
+.pagination>li:last-child>a:hover,
+.pagination>li:last-child>span:hover,
+.pagination>li:last-child>a:focus,
+.pagination>li:last-child>span:focus {
     background-color: transparent;
+}
+/****************************************/
+
+
+/*invoice-search & contract-search page*/
+
+
+/****************************************/
+.invoice-search .container .row .col-md-12:first-child,
+.contract-search .container .row .col-md-12:first-child {
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.invoice-search-form,
+.contract-search-form {
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.text-success {
+	color: #007d00;
+}
+.text-danger {
+	color: #cc0000;
+}
+.account table td {
+    font-size: 12px;
+    font-weight: 500;
+}
+.modal-header {
+    padding: 10px 0 0 10px;
+    border: none;
+}
+.modal-header .close {
+    color: #003366;
+    opacity: 0.8;
+}
+.modal-footer {
+    padding-right: 0;
+    background-color: #ebebeb;
+}
+.modal-footer .col-md-3 {
+    padding-right: 0;
+}
+.modal-footer img {
+    float: right;
+    margin-left: 20px;
+}
+.modal-footer .col-md-4 a:last-child img {
+	margin-left: 0;
+}
+.modal-footer nav li a {
+    width: 7px;
+}
+/****************************************/
+
+
+/*contract page*/
+
+
+/****************************************/
+.contract .box-container,
+.add-account .box-container {
+    position: relative;
+    margin-top: 50px;
+    padding: 20px 0 40px 0;
+}
+.contract .box-container form {
+    padding: 0 20px;
+}
+/****************************************/
+
+
+/*add-account page*/
+
+
+/****************************************/
+.add-account .form-container form {
+    position: relative;
+}
+.form-container {
+    padding: 30px;
+}
+.add-account .form-container form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 34px;
+    border: 1px solid #036;
+    padding-right: 75px;
+    color: #036;
+}
+.add-account .form-container form p {
+    font-size: 10px;
+    color: #036;
+    font-weight: 500;
+    padding: 10px 5px;
+    height: 60px;
+}
+.add-account .select-text {
+    color: #036;
+}
+.select-text.rial {
+    left: -20px;
+    right: inherit;
+}
+.hover-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 150;
+}
+.hover-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.7;
+    top: 0;
+    z-index: 150;
+}
+.hover {
+    width: 27%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /***********************************************/
@@ -869,31 +1100,46 @@ table {
     .container {
         width: 750px;
     }
+    .invoice-search-form,
+    .contract-search-form {
+        width: 30%;
+    }
+    .form-container {
+        padding: 90px;
+    }
+    .logo-container {
+        bottom: -60px;
+    }
     .ui-datepicker {
-        width: 300px;
+        width: 190px;
+        padding: 0;
+    }
+    .price .top-bar .col-md-3 {
+        padding: 0 5px;
+        width: 200px;
+        margin-bottom: 0;
+    }
+    .price .top-bar .col-md-3:last-child {
+        width: 110px;
+        float: left;
+    }
+    .bootstrap-select>.dropdown-toggle.btn-default,
+    .bootstrap-select>.dropdown-toggle {
+        padding-right: 75px;
+    }
+    .select-text-datepicker {
+        right: 12px;
+        top: 10px;
     }
 }
-@media (max-width: 991px) {
-    .table-condensed-xs > thead > tr > th,
-    .table-condensed-xs > tbody > tr > th,
-    .table-condensed-xs > tfoot > tr > th,
-    .table-condensed-xs > thead > tr > td,
-    .table-condensed-xs > tbody > tr > td,
-    .table-condensed-xs > tfoot > tr > td {
-        padding: 5px;
-    }
-}
+
 @media (min-width: 992px) {
-    .container {
-        width: 650px;
-        float: right;
-        margin: 150px 5% 100px;
-    }
-    .container.contact-us .col-md-6 {
-        padding-left: 30px;
-    }
     body {
         padding: 0 250px 0 0;
+    }
+    .container {
+        width: 700px;
+        margin: 70px auto;
     }
     #sidebar {
         min-height: 744px;
@@ -918,8 +1164,7 @@ table {
         display: block;
     }
     .navbar {
-        display: none !important;
-        /* IE8 fix */
+        display: none !important; /* IE8 fix */
     }
     .footer {
         position: absolute;
@@ -939,15 +1184,32 @@ table {
     .nav.nav-stacked {
         margin-top: 5px;
     }
-    .page-rules .box {
+    .container.contact-us .col-md-6 {
+        padding-left: 30px;
+        margin-bottom: 0;
+    }
+    .page-rules {
+        margin-bottom: 40px;
+    }
+    .page-rules .box-container,
+    .contract .box-container,
+    .add-account .box-container,
+    .about-us-page {
         margin-top: 0;
     }
     h3.page-title {
         margin: -60px 0 70px;
         font-size: 50px;
     }
-    .page-rules p {
+    .page-rules p,
+    .contract .col-md-6 p {
         font-size: 18px;
+    }
+    .contract .box-container  {
+        height: 750px;
+    }
+    .contract .box-container form {
+        padding: 100px 20px;
     }
     .customers .page-title {
         padding: 20px;
@@ -961,11 +1223,11 @@ table {
         padding-left: 20px;
     }
     .logo-container {
-        bottom: -60px;
-        left: -5px;
+        bottom: -8px;
+        left: -40px;
     }
     h2.page-title {
-        margin: -75px -20px 50px 0;
+        margin: -75px -35px 50px 0;
         font-size: 60px;
     }
     .about-us-page {
@@ -978,12 +1240,43 @@ table {
         margin-top: 0;
     }
     .price .top-bar .col-md-3 {
-        margin-bottom: 0;
+        padding: 0 3px;
+        width: 193px;
+    }
+    .price .top-bar .col-md-3:last-child {
+        width: 90px;
     }
     input[type="text"].datepicker {
-        padding-right: 80px;
-        font-size: 10px;
+        padding-right: 100px;
+        font-size: 13px;
         padding-left: 0;
+        padding-top: 7px;
+    }
+    .ui-datepicker {
+        width: 187px;
+    }
+    .datepicker {
+        max-width: 200px;
+    }
+    .price-icons {
+        height: 30px;
+    }
+    .invoice-search .container .row .col-md-12:first-child,
+    .contract-search .container .row .col-md-12:first-child {
+        margin-top: 0;
+    }
+    .invoice-search-form,
+    .contract-search-form {
+        margin: 0 15px 0 auto;
+        width: 100%;
+        padding-right: 0;
+    }
+    .bootstrap-select>.dropdown-toggle.btn-default,
+    .bootstrap-select>.dropdown-toggle {
+        max-width: 200px;
+    }
+    .form-container {
+        padding: 30px;
     }
 }
 
@@ -995,58 +1288,131 @@ table {
         padding-right: 260px;
     }
     .sidebar-container {
-        /*min-height: 633px;*/
         height: 100%;
         overflow-y: auto;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
     .footer {
         position: static;
         margin-bottom: 0;
         bottom: 0;
-        margin-top: 50px;
+        margin-top: auto;
+        align-self: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .table-condensed-xs > thead > tr > th,
+    .table-condensed-xs > tbody > tr > th,
+    .table-condensed-xs > tfoot > tr > th,
+    .table-condensed-xs > thead > tr > td,
+    .table-condensed-xs > tbody > tr > td,
+    .table-condensed-xs > tfoot > tr > td {
+        padding: 5px;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 860px;
+        margin: 100px auto;
     }
     .select-text {
         font-size: 12px;
-        top: 8px;
+        top: 9px;
         right: 8px;
     }
-    .bootstrap-select>.dropdown-toggle.btn-default, .bootstrap-select>.dropdown-toggle {
+    .bootstrap-select>.dropdown-toggle.btn-default,
+    .bootstrap-select>.dropdown-toggle {
         padding-right: 80px;
     }
     .select-text-datepicker {
         font-size: 12px;
-        top: 8px;
-        right: 18px;
+        top: 9px;
+        right: 22px;
+    }
+    .price .top-bar .col-md-3 {
+        padding: 0 15px;
+        width: 230px;
+    }
+    .price .top-bar .col-md-3:last-child {
+        width: 140px;
+    }
+    .ui-datepicker {
+        width: 200px;
     }
     input[type="text"].datepicker {
-        padding-right: 100px;
+        padding-right: 110px;
         font-size: 13px;
+    }
+    .price-icons {
+        height: 35px;
+    }
+    .invoice-search-form,
+    .contract-search-form {
+        width: 80%;
+    }
+    .contract .box-container form {
+        padding: 120px 40px;
+    }
+    .form-container {
+        padding: 50px;
+    }
+    .select-text.rial {
+        left: -30px;
+    }
+    .logo-container {
+        left: -33px;
+        bottom: -2px;
+    }
+    .page-rules {
+        margin-bottom: 70px;
     }
 }
 
 @media (min-width: 1440px) {
     .container {
         width: 1080px;
+        margin: 150px auto;
     }
-    .about-us-page .logo-container {
-        left: -45px;
+    .logo-container {
+        bottom: -20px;
+        left: -50px;
+    }
+    .page-rules {
+        margin-bottom: 120px;
     }
     .customers .page-title {
         margin: 0 200px 30px;
+    }
+    .invoice-search-form,
+    .contract-search-form {
+        width: 70%;
+    }
+    .contract .box-container form {
+        padding: 140px 60px;
+    }
+    .form-container {
+        padding: 70px;
+    }
+    .price .top-bar .col-md-3 {
+        width: 25%;
+    }
+    .bootstrap-select.btn-group .dropdown-menu {
+        min-width: auto;
+        width: 200px;
     }
 }
 
 @media (min-width: 1900px) {
     .container {
         width: 1470px;
-        margin-top: 220px;
+        margin: 220px auto;
     }
     #sidebar {
         width: 300px;
@@ -1054,7 +1420,8 @@ table {
     .navbar-icon {
         height: 30px;
     }
-    .nav a, .dropdown-menu>li>a {
+    .nav a,
+    .dropdown-menu>li>a {
         font-size: 14px;
     }
     body {
@@ -1076,6 +1443,11 @@ table {
     .about-us-page .col-lg-6 {
         width: 33.3333333%;
     }
+    .logo-container {
+        bottom: -20px;
+        left: -65px;
+        width: 35%;
+    }
     .customers .page-title {
         margin: 0 250px 30px;
     }
@@ -1083,11 +1455,50 @@ table {
         margin: -75px 0 70px;
         font-size: 72px;
     }
-    .page-rules p {
+    .page-rules {
+        margin-bottom: 183px;
+    }
+    .page-rules p,
+    .contract .col-md-6 p {
         font-size: 20px;
     }
     h2.page-title {
         font-size: 100px;
-        margin: -200px -150px 120px 0;
+        margin: -200px -130px 120px 0;
+    }
+    .invoice-search-form,
+    .contract-search-form {
+        width: 60%;
+    }
+    .contract .box-container form {
+        padding: 140px;
+    }
+    .form-container {
+        padding: 50px 150px;
+    }
+    .add-account .select-text {
+        font-size: 20px;
+    }
+    .add-account .form-container form input {
+        height: 45px;
+        padding-right: 130px;
+        font-size: 20px;
+    }
+    .select-text.rial {
+        left: -40px;
+    }
+    .add-account .form-container form p {
+        font-size: 16px;
+    }
+    .add-account .form-container form p span {
+        padding-right: 18px;
+    }
+    .add-account .form-container form p {
+        height: 80px;
+    }
+}
+@media (min-width: 2100px) {
+    .container {
+        margin-right: 165px;
     }
 }

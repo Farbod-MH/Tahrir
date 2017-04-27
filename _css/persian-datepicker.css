@@ -253,7 +253,7 @@
 
 .ui-widget-content {
 	border: 1px solid #003366;
-    background: #ffffff url(../_img/ui-bg_glass_75_ffffff_1x400.png) 50% 50% repeat-x;
+    background: #f8f8f8;
     color: #484848;
     border-top: 0;
 }
@@ -2285,7 +2285,7 @@ input[type="password"].datepicker,
 textarea.datepicker,
 .uneditable-input.datepicker {
 	display: inline-block;
-	padding: 4px;
+	padding: 6px;
 	font-size: 13px;
 	line-height: 18px;
 	border: 1px solid #003366;
