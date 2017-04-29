@@ -39,7 +39,7 @@
 					<a href="#" title="ورود" class="btn btn-primary"  >ورود</a>
 				</div>
 				<div class="col-xs-6 sign-up">
-					<a href="#" title="ثبت نام" class="btn btn-primary" >ثبت نام</a>
+					<a href="registration.php" title="ثبت نام" class="btn btn-primary" >ثبت نام</a>
 				</div>
 			</div>
 			<!-- -->

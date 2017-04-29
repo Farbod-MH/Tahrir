@@ -264,6 +264,10 @@ nav.navbar a {
 
 .form-control {
     background-color: #f8f8f8;
+    height: 44px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: #003366;
 }
 
 .form-control:focus {
@@ -291,10 +295,6 @@ nav.navbar a {
     border-color: #849cb4;
 }
 
-.form-control {
-    height: 44px;
-}
-
 
 /*main nav*/
 
@@ -318,9 +318,9 @@ nav.navbar a {
     border-bottom: none;
 }
 
-.nav.nav-stacked li+li {
+/*.nav.nav-stacked li+li {
     margin-top: 0;
-}
+}*/
 
 .nav.nav-stacked li:first-child {
     border-top: 1px solid #849cb4;
@@ -568,29 +568,28 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     height: 281px;
 }
 
-.form-control {
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
 .contact .form-control::-webkit-input-placeholder,
+.registration .form-control::-webkit-input-placeholder,
 .contact textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge*/
     color: #003366;
 }
 
 .contact .form-control:-moz-placeholder,
+.registration .form-control:-moz-placeholder,
 .contact textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #003366;
     opacity: 0.7;
 }
 
 .contact .form-control::-moz-placeholder,
+.registration .form-control::-moz-placeholder,
 .contact textarea::-moz-placeholder { /* Mozilla Firefox 19+*/
     color: #003366;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
 .contact .form-control:-ms-input-placeholder,
+.registration .form-control:-ms-input-placeholder,
 .contact textarea:-ms-input-placeholder { /* Internet Explorer 10-11*/
     color: #003366;
 }
@@ -1020,7 +1019,8 @@ table {
 
 /****************************************/
 .contract .box-container,
-.add-account .box-container {
+.add-account .box-container,
+.registration .box-container {
     position: relative;
     margin-top: 50px;
     padding: 20px 0 40px 0;
@@ -1088,6 +1088,73 @@ table {
     bottom: 0;
 }
 
+/****************************************/
+
+
+/*404 page*/
+
+
+/****************************************/
+
+.page-not-found {
+	background-color: #004080;
+}
+
+.page-not-found .container {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page-not-found .container h2 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 300;
+    text-shadow: 17px 10px 10px rgba(0, 0, 0, 0.5)
+}
+
+.page-not-found .container p {
+    font-size: 20px;
+}
+
+.page-not-found .container .img-responsive {
+    display: block;
+    margin: 0 auto;
+}
+
+/****************************************/
+
+
+/*registration page*/
+
+
+/****************************************/
+
+.registration .form-container form> input:last-of-type {
+    margin-bottom: 40px;
+}
+
+.registration .form-container {
+    padding: 0 30px;
+}
+
+/*.birthday-picker select {
+    display: inline-block;
+    width: 22%;
+    margin-left: 3%;
+}*/
+
+
+.birthday-picker select:last-child {
+    margin-left: 0;
+}
+
+.address-information input {
+    display: inline-block;
+    width: 30%;
+}
+/* TODO:  */
+
 /***********************************************/
 
 
@@ -1130,6 +1197,15 @@ table {
     .select-text-datepicker {
         right: 12px;
         top: 10px;
+    }
+    .page-not-found .container {
+        margin-top: 150px;
+    }
+    .page-not-found .container h2 {
+        font-size: 130px;
+    }
+    .page-not-found .container p {
+        font-size: 40px;
     }
 }
 
@@ -1194,6 +1270,7 @@ table {
     .page-rules .box-container,
     .contract .box-container,
     .add-account .box-container,
+    .registration .box-container,
     .about-us-page {
         margin-top: 0;
     }
@@ -1373,6 +1450,12 @@ table {
     .page-rules {
         margin-bottom: 70px;
     }
+    .page-not-found .container p {
+        font-size: 50px;
+    }
+    .page-not-found .container h2 {
+        font-size: 150px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -1406,6 +1489,12 @@ table {
     .bootstrap-select.btn-group .dropdown-menu {
         min-width: auto;
         width: 200px;
+    }
+    .page-not-found .container p {
+        font-size:65px;
+    }
+    .page-not-found .container h2 {
+        font-size: 200px;
     }
 }
 
@@ -1495,6 +1584,12 @@ table {
     }
     .add-account .form-container form p {
         height: 80px;
+    }
+    .page-not-found .container p {
+        font-size: 80px;
+    }
+    .page-not-found .container h2 {
+        font-size: 250px;
     }
 }
 @media (min-width: 2100px) {
