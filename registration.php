@@ -29,14 +29,11 @@
                          <h3 class="page-title">ثبت مشخصات</h3>
                          <div class="form-container">
                               <form action="" method="post">
-                                   <input type="text" class="form-control" id="" placeholder="نام و نام خانوادگی">
+                                   <input type="text" class="form-control input-center" id="" placeholder="نام و نام خانوادگی">
                                    <div class="birthday-picker">
                                         <div class="row">
-                                             <div class="col-md-3">
-                                                  تاریخ تولد
-                                             </div>
-                                             <div class="col-md-3">
-                                                  <select name="day" id="" class="selectpicker form-control">
+                                             <div class="col-lg-3 col-md-4 col-sm-3">
+                                                  <select data-size="5" name="day" id="" class="selectpicker form-control">
                                                        <option value="">روز</option>
                                                        <option value="">---</option>
                                                        <option value="01">01</option>
@@ -72,26 +69,26 @@
                                                        <option value="31">31</option>
                                                   </select>
                                              </div>
-                                             <div class="col-md-3">
-                                                  <select name="month" id="" class="selectpicker form-control">
+                                             <div class="col-lg-3 col-md-4 col-sm-3">
+                                                  <select data-size="5" name="month" id="" class="selectpicker form-control">
                                                        <option value="">ماه</option>
                                                        <option value="">-----</option>
-                                                       <option value="01">فروردین</option>
-                                                       <option value="02">اردیبهشت</option>
-                                                       <option value="03">خرداد</option>
-                                                       <option value="04">تیر</option>
-                                                       <option value="05">مرداد</option>
-                                                       <option value="06">شهریور</option>
-                                                       <option value="07">مهر</option>
-                                                       <option value="08">آبان</option>
-                                                       <option value="09">آذر</option>
-                                                       <option value="10">دی</option>
-                                                       <option value="11">بهمن</option>
-                                                       <option value="12">اسفند</option>
+                                                       <option title="01" value="01">فروردین</option>
+                                                       <option title="02" value="02">اردیبهشت</option>
+                                                       <option title="03" value="03">خرداد</option>
+                                                       <option title="04" value="04">تیر</option>
+                                                       <option title="05" value="05">مرداد</option>
+                                                       <option title="06" value="06">شهریور</option>
+                                                       <option title="07" value="07">مهر</option>
+                                                       <option title="08" value="08">آبان</option>
+                                                       <option title="09" value="09">آذر</option>
+                                                       <option title="10" value="10">دی</option>
+                                                       <option title="11" value="11">بهمن</option>
+                                                       <option title="12" value="12">اسفند</option>
                                                   </select>
                                              </div>
-                                             <div class="col-md-3">
-                                                  <select name="year" id="" class="selectpicker form-control">
+                                             <div class="col-lg-3 col-md-4 col-sm-3">
+                                                  <select data-size="5" name="year" id="" class="selectpicker form-control">
                                                        <option value="">سال</option>
                                                        <option value="">----</option>
                                                        <option value="1396">1396</option>
@@ -193,23 +190,28 @@
                                                        <option value="1300">1300</option>
                                                   </select>
                                              </div>
+                                             <div class="col-lg-3 col-md-12 col-sm-3">
+                                                  <select name="gender" id="" class="selectpicker form-control">
+                                                       <option value="">جنسیت</option>
+                                                       <option value="male">مرد</option>
+                                                       <option value="female">زن</option>
+                                                  </select>
+                                             </div>
                                         </div>
-
-
-
-                                        <select name="gender" id="" class="selectpicker form-control">
-                                             <option value="">جنسیت</option>
-                                             <option value="male">مرد</option>
-                                             <option value="female">زن</option>
-                                        </select>
                                    </div>
-                                   <input type="text" class="form-control" id="" placeholder="آدرس">
-                                   <div class="address-information">
-                                        <input type="text" class="form-control" id="" placeholder="زنگ">
-                                        <input type="text" class="form-control" id="" placeholder="واحد">
-                                        <input type="text" class="form-control" id="" placeholder="پلاک">
+                                   <input type="text" class="form-control input-center" id="" placeholder="آدرس">
+                                   <div class="row address-information">
+                                        <div class="col-md-4 col-xs-4">
+                                             <input type="text" class="form-control input-center" id="" placeholder="زنگ">
+                                        </div>
+                                        <div class="col-md-4 col-xs-4">
+                                             <input type="text" class="form-control input-center" id="" placeholder="واحد">
+                                        </div>
+                                        <div class="col-md-4 col-xs-4">
+                                             <input type="text" class="form-control input-center" id="" placeholder="پلاک">
+                                        </div>
                                    </div>
-                                   <input type="text" class="form-control" id="" placeholder="کد پستی">
+                                   <input type="text" class="form-control input-center" id="" placeholder="کد پستی">
                                    <button type="submit" class="btn btn-primary btn-block">ثبت</button>
                               </form>
                          </div>
