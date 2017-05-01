@@ -10,7 +10,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-4 cart-icon">
-					<a href="#" title="سبد خرید"><img src="_img/_svg/cart.svg" alt="cart" class="img-responsive navbar-icon "><span class="badge">۲۲</span></a>
+					<a href="cart.php" title="سبد خرید"><img src="_img/_svg/cart.svg" alt="cart" class="img-responsive navbar-icon "><span class="badge">۲۲</span></a>
 				</div>
 				<div class="col-xs-4 phone-icon">
 					<a href="contact_us.php" title="تماس با ما"><img src="_img/_svg/phone.svg" alt="phone" class="img-responsive navbar-icon "></a>

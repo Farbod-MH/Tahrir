@@ -1023,7 +1023,8 @@ table {
 /****************************************/
 .contract .box-container,
 .add-account .box-container,
-.registration .box-container {
+.registration .box-container,
+.cart .box-container {
     position: relative;
     margin-top: 50px;
     padding: 20px 0 40px 0;
@@ -1174,12 +1175,6 @@ table {
     color: inherit;
 }
 
-/*.birthday-picker select {
-    display: inline-block;
-    width: 22%;
-    margin-left: 3%;
-}*/
-
 .birthday-picker p {
     font-weight: 500;
 }
@@ -1196,8 +1191,65 @@ table {
     margin-left: 0;
 }
 
-/* TODO:  */
+/****************************************/
 
+
+/*cart page*/
+
+
+/****************************************/
+
+.cart .box-container {
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cart .price-icons {
+    float: right;
+    margin-right: 0;
+    margin-top: 5px;
+}
+
+.cart .col-md-4 a:last-child .price-icons {
+    margin-right: 5px;
+}
+
+.total-price {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 55%;
+    margin-bottom: 0;
+    vertical-align: middle;
+    line-height: 44px;
+    padding: 0 0 0 5px;
+    text-align: left;
+    margin: 0 5px;
+    max-width: 200px;
+}
+
+.cart .col-md-8.col-xs-7 {
+    margin-bottom: 20px;
+}
+
+.cart .container form span {
+    color: #003366;
+    font-weight: 500;
+    float: left;
+    line-height: 44px;
+}
+
+.cart .btn-success {
+    margin-bottom: 30px;
+    height: 44px;
+    background-color: #007d00;
+}
+
+.cart table .img-responsive {
+    margin: 0 auto;
+    width: 30px;
+}
+
+/* TODO:  */
 /***********************************************/
 
 
@@ -1249,6 +1301,12 @@ table {
     }
     .page-not-found .container p {
         font-size: 40px;
+    }
+    .cart .btn-success {
+        float: left;
+        width: 60%;
+        margin: 0 40px 30px 23px;
+        width: 200px;
     }
 }
 
@@ -1314,6 +1372,7 @@ table {
     .contract .box-container,
     .add-account .box-container,
     .registration .box-container,
+    .cart .box-container,
     .about-us-page {
         margin-top: 0;
     }
@@ -1415,6 +1474,9 @@ table {
     }
     .registration .col-md-6:first-child .form-container form> input:last-of-type {
         margin-bottom: 78px;
+    }
+    .cart .btn-success {
+        margin-bottom: 0;
     }
 }
 
