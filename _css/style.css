@@ -22,10 +22,6 @@
 
 
 /*general rules*/
-/*
-html, body {
-    height: 100%;
-}*/
 
 body {
     background-color: #f5f5f5;
@@ -99,25 +95,26 @@ h1, h2, h3, h4 {
 /*vertical navbar*/
 
 #sidebar {
-    width: 300px;
+    width: 260px;
     position: fixed;
     top: 0;
+    left: auto !important;
     padding-right: 5px;
     overflow-x: hidden;
-}
-
-.canvas-slid {
-    bottom: 0 !important;
-}
-
-.navmenu {
     padding-top: 30px;
     margin-top: 70px;
 }
 
-.navmenu-brand {
-    margin: 0;
-    padding: 0;
+.sidebar-container {
+    position: relative;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.canvas-slid {
+    bottom: 0 !important;
 }
 
 .navbar {
@@ -162,6 +159,8 @@ nav.navbar a {
 
 .navbar-header {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-icon {
@@ -171,8 +170,8 @@ nav.navbar a {
 
 .cart-icon .badge {
     position: absolute;
-    left: 9px;
-    top: -8px;
+    left: 20px;
+    top: -10px;
     border-radius: 100%;
     padding: 6px;
     background-color: #cc0000;
@@ -207,12 +206,12 @@ nav.navbar a {
     width: 22px;
 }
 
-.log-in {
+.sidebar .log-in {
     width: 93.33333333%;
     margin: 0 auto;
 }
 
-.log-in .col-xs-6 {
+.sidebar .log-in .col-xs-6 {
     margin: 18px auto;
 }
 
@@ -224,11 +223,11 @@ nav.navbar a {
     background-color: #004080;
 }
 
-.log-in .col-xs-6:first-child a {
+.sidebar .log-in .col-xs-6:first-child a {
     float: left;
 }
 
-.log-in .btn {
+.sidebar .log-in .btn {
     padding: 4px 12px;
     width: 102px;
 }
@@ -245,11 +244,6 @@ nav.navbar a {
     top: 1px;
     display: inline-block;
     line-height: 1;
-}
-
-.search-btn {
-    padding-right: 0;
-    padding-left: 0;
 }
 
 .input-group-search .input-group-addon {
@@ -280,9 +274,11 @@ nav.navbar a {
     border-color: #849cb4;
 }
 
-.input-group-search button {
+.input-group-search .search-btn {
     border: 0;
     background: transparent;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .navbar-form {
@@ -311,16 +307,12 @@ nav.navbar a {
 }
 
 .nav.nav-stacked li {
-    border-bottom: 0.5px solid #849cb4;
+    border-bottom: 1px solid #849cb4;
 }
 
 .nav.nav-stacked ul li:last-child {
     border-bottom: none;
 }
-
-/*.nav.nav-stacked li+li {
-    margin-top: 0;
-}*/
 
 .nav.nav-stacked li:first-child {
     border-top: 1px solid #849cb4;
@@ -456,16 +448,165 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     text-align: center;
     margin-top: 10px;
 }
+
 .account-nav {
 	display: none;
 }
+
 .account .account-nav {
 	display: block;
 }
+
 .account .main-nav {
 	display: none;
 }
 
+.products-nav {
+    display: none;
+}
+
+.products .products-nav {
+    /*position: relative;*/
+    display: block;
+    margin: 25px 0 0 0;
+}
+
+.products .main-nav,
+.products .account-nav {
+    display: none;
+}
+
+
+.back-btn {
+    background-color: #f8f8f8;
+    padding: 0;
+    width: 38px;
+    position: absolute;
+    height: 100%;
+}
+
+.back-btn span {
+    display: block;
+    margin: 5px 2px;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.back-btn img {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.products-nav-container {
+    position: relative;
+    right: 38px;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+}
+
+.products-nav-title {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #003366;
+}
+
+.products-nav-title::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom:1px solid #ebebeb;
+}
+
+.products .ui-slider-horizontal {
+    margin: 20px auto 35px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 5px;
+    background: #007d00;
+}
+
+.products .ui-slider .ui-slider-range {
+    background-color: #004080;
+    background-image: none;
+    transition: none;
+    border-radius: 0px;
+}
+
+.products .ui-widget-content .ui-state-default {
+    width: 20px;
+    height: 23px;
+    background-image: url(../_img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 20px 23px;
+    background-color: transparent;
+    border: none;
+    top: 4px;
+    margin-left: -10px;
+    transition: none;
+}
+
+.products .ui-widget-content .ui-state-focus {
+    border: none;
+}
+
+.min-price, .max-price {
+    width: 50%;
+}
+
+.max-price {
+    text-align: left;
+}
+
+.brand-container {
+    padding: 0;
+}
+
+.brand-container ul {
+    list-style: none;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+.brand-container li {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+.brand-container input[type=checkbox] {
+    float: left;
+    opacity: 0;
+}
+
+.brand-container input[type=checkbox] + label::before {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    display: block;
+    transition: box-shadow 0.4s, border 0.4s;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 1px #FFF;/* Soften the jagged edge */
+    cursor: pointer;
+    float: left;
+}
+
+.brand-container label .brand-name {
+    font-weight: 500;
+    color: #003366;
+    float: right;
+}
+
+/* TODO:  */
 /*navigation*/
 
 
@@ -570,12 +711,14 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 
 .contact .form-control::-webkit-input-placeholder,
 .registration .form-control::-webkit-input-placeholder,
+.log-in-page .form-control::-webkit-input-placeholder,
 .contact textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge*/
     color: #003366;
 }
 
 .contact .form-control:-moz-placeholder,
 .registration .form-control:-moz-placeholder,
+.log-in-page .form-control:-moz-placeholder,
 .contact textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #003366;
     opacity: 0.7;
@@ -583,6 +726,7 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 
 .contact .form-control::-moz-placeholder,
 .registration .form-control::-moz-placeholder,
+.log-in-page .form-control::-moz-placeholder,
 .contact textarea::-moz-placeholder { /* Mozilla Firefox 19+*/
     color: #003366;
     /*opacity: 0.7;*/
@@ -590,6 +734,7 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 
 .contact .form-control:-ms-input-placeholder,
 .registration .form-control:-ms-input-placeholder,
+.log-in-page .form-control:-ms-input-placeholder,
 .contact textarea:-ms-input-placeholder { /* Internet Explorer 10-11*/
     color: #003366;
 }
@@ -1024,7 +1169,9 @@ table {
 .contract .box-container,
 .add-account .box-container,
 .registration .box-container,
-.cart .box-container {
+.log-in-page .box-container,
+.cart .box-container,
+.products .box-container {
     position: relative;
     margin-top: 50px;
     padding: 20px 0 40px 0;
@@ -1134,11 +1281,13 @@ table {
 
 /****************************************/
 
-.registration .form-container form> input:last-of-type {
+.registration .form-container form> input:last-of-type,
+.log-in-page .form-container form> input:last-of-type {
     margin-bottom: 40px;
 }
 
-.registration .form-container {
+.registration .form-container,
+.log-in-page .form-container {
     padding: 0 30px;
 }
 
@@ -1249,6 +1398,99 @@ table {
     width: 30px;
 }
 
+
+/***********************************************/
+
+
+/*products page*/
+
+
+/***********************************************/
+.products .box-container {
+    padding-top: 0;
+}
+
+.product-container {
+    padding: 10px 10px 10px;
+}
+
+.products .box-container .col-md-6 {
+    margin-bottom: 40px;
+}
+
+.product-container .img-container {
+    padding: 0 20px;
+}
+
+.product-container img {
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.product-price {
+    text-align: center;
+    color: #007d00;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.product-price span {
+    margin-right: 10px;
+}
+
+.product-container .btn img {
+    float: right;
+}
+
+.product-container .btn {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.product-container .form-control,
+.product-container .bootstrap-select > .dropdown-toggle.btn-default,
+.bootstrap-select > .dropdown-toggle,
+.product-container .bootstrap-select .dropdown-menu > li {
+    background-color: #fff;
+}
+
+.products .bootstrap-select>.dropdown-toggle.bs-placeholder,
+.products .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.products .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.products .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: inherit;
+}
+
+.products .bootstrap-select>.dropdown-toggle {
+    padding-right: 8px;
+    color: #003366;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.products .dropdown-menu>li>a {
+    padding: 10px 8px 10px 15px;
+    color: #003366;
+}
+
+.products .product-container .col-xs-12 .col-xs-3 span {
+    line-height: 31px;
+    color: #484848;
+    font-weight: 500;
+}
+
+.products .product-container .col-xs-12 .col-xs-3:first-child span {
+    border: 1px solid #003366;
+    border-radius: 5px;
+    width: 31px;
+    height: 31px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 /* TODO:  */
 /***********************************************/
 
@@ -1259,6 +1501,9 @@ table {
 /***********************************************/
 
 @media (min-width: 768px) {
+    #sidebar {
+        width: 300px;
+    }
     .container {
         width: 750px;
     }
@@ -1324,13 +1569,25 @@ table {
         padding-bottom: 50000px;
         overflow-y: visible;
         padding-top: 0;
+        padding-right: 0;
         margin-top: 0;
         width: 250px;
-    }
-    .sidebar {
         -webkit-box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
         -moz-box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
         box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
+    }
+    .sidebar-container {
+        position: absolute;
+        display: table;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        top: 0;
+        padding-right: 5px;
+    }
+    .menu-container {
+        display: table-row;
+        height: 100%;
     }
     .navbar-brand {
         margin: 10px auto 15px;
@@ -1343,11 +1600,22 @@ table {
     .navbar {
         display: none !important; /* IE8 fix */
     }
+    .back-btn {
+        position: relative;
+        margin-bottom: -5000px;
+        padding-bottom: 5000px;
+    }
+    .products-nav-container {
+        right: 0;
+    }
     .footer {
-        position: absolute;
+        position: static;
         bottom: 0;
-        margin-top: 0;
-        margin-bottom: 50000px;
+        margin: auto auto 50000px;
+    }
+    .cart-icon .badge {
+        left: 9px;
+        top: -8px;
     }
     .nav-user-details .col-xs-12 {
         margin-bottom: 10px;
@@ -1373,6 +1641,7 @@ table {
     .add-account .box-container,
     .registration .box-container,
     .cart .box-container,
+    .products .box-container,
     .about-us-page {
         margin-top: 0;
     }
@@ -1457,7 +1726,8 @@ table {
     .form-container {
         padding: 30px;
     }
-    .registration h3.page-title {
+    .registration h3.page-title,
+    .log-in-page h3.page-title {
         font-size: 40px;
         margin-top: -53px;
     }
@@ -1480,7 +1750,7 @@ table {
     }
 }
 
-@media (min-width: 992px) and (max-height: 743px) {
+/*@media (min-width: 992px) and (max-height: 743px) {
     #sidebar {
         width: 260px;
     }
@@ -1488,22 +1758,23 @@ table {
         padding-right: 260px;
     }
     .sidebar-container {
-        height: 100%;
         overflow-y: auto;
         overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
+        top: 0;
+        display: table;
+    }
+    .menu-container {
+        display: table-row;
+        height: 100%;
     }
     .footer {
         position: static;
-        margin-bottom: 0;
         bottom: 0;
         margin-top: auto;
-        align-self: flex-start;
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
 @media (max-width: 1199px) {
     .table-condensed-xs > thead > tr > th,
@@ -1588,6 +1859,9 @@ table {
     .registration .dropdown-menu>li>a {
         padding: 10px 12px 10px 30px;
     }
+    .products .product-container .col-xs-12 .col-xs-3:last-child span {
+        margin-right: -10px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -1640,6 +1914,9 @@ table {
     }
     .registration .col-md-6:first-child .form-container form> input:last-of-type {
         margin-bottom: 54px;
+    }
+    .products .box-container .col-lg-4 {
+        width: 25%;
     }
 }
 
