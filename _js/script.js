@@ -9,12 +9,12 @@ $(document).ready(function() {
             $(".account-nav").fadeIn("slow");
         });
     });
-    $('#datepickerfrom').datepicker({
-        onSelect: function(dateText, inst) {
-            $('#datepickerto').datepicker('option', 'minDate', new JalaliDate(inst['selectedYear'], inst['selectedMonth'], inst['selectedDay']));
-        }
+    $("#hide-products-nav").on("click", function() {
+        $(".products-nav").fadeOut("fast" , function() {
+            $(".main-nav").fadeIn("slow");
+            $('.products .main-nav .dropdown').addClass('open');
+        });
     });
-    $('#datepickerto').datepicker();
 
     $('#input-send').click(function() {
     var numberBox = $('#input-number').val();
@@ -23,6 +23,18 @@ $(document).ready(function() {
     $('#number1').val("");
     $('#number2').val("");
 });
+
+function addCommas(nStr){
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+  }
 
 function printImg() {
     popup = window.open();
@@ -42,6 +54,7 @@ $('#number1').on('input', function() {
     } else {
     var rawNumber = $('#number1').val();
     $('#numberToText1').text(wordifyRials(rawNumber));
+    $('#number1').val(rawNumber);
     }
 });
 $('#number2').on('input', function() {
@@ -50,20 +63,15 @@ $('#number2').on('input', function() {
     } else {
     var rawNumber = $('#number2').val();
     $('#numberToText2').text(wordifyRials(rawNumber));
+    $('#number2').val(rawNumber);
     }
 });
-
-$('#datepickerfrom').on('blur', function(){
-   $(this).removeClass('datepicker-selected');
-   $('#datepickerfromContainer').removeClass('datepicker-container');
-}).on('focus', function(){
-   $(this).addClass('datepicker-selected');
-   $('#datepickerfromContainer').addClass('datepicker-container')
-});
-$('#datepickerto').on('blur', function(){
-   $(this).removeClass('datepicker-selected');
-   $('#datepickertoContainer').removeClass('datepicker-container');
-}).on('focus', function(){
-   $(this).addClass('datepicker-selected');
-   $('#datepickertoContainer').addClass('datepicker-container')
-});
+$('.see-more').click(function(){
+		var $this = $(this);
+		$this.toggleClass('see-more');
+		if($this.hasClass('see-more')){
+			$this.text('بیشتر...');
+		} else {
+			$this.text('کمتر...');
+		}
+	});
