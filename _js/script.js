@@ -22,6 +22,18 @@ $(document).ready(function() {
     });
     $('#number1').val("");
     $('#number2').val("");
+    $('#products-carousel-1').carousel({ interval: 0 });
+    $('#products-carousel-2').carousel({ interval: 0 });
+    $('.products-carousel .item').each(function() {
+      var itemToClone = $(this);
+      for (var i = 1; i < 4; i++) {
+        itemToClone = itemToClone.next();
+        if (!itemToClone.length) {
+          itemToClone = $(this).siblings(':first');
+        }
+        itemToClone.children(':first-child').clone().addClass("cloneditem-" + (i)).appendTo($(this));
+      }
+    });
 });
 
 function addCommas(nStr){

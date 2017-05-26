@@ -151,7 +151,7 @@
 						<span class="list-item-icon products-icon"></span>
 						<a title="منوی اصلی" href="#" id="show-main-nav">  منوی اصلی<span class="arrow-left"></span></a>
 					</li>
-					<li class="dropdown">
+					<li>
 						<span class="list-item-icon add-account-icon"></span>
 						<a title="شارژ حساب" href="add_account.php"></span>شارژ حساب <span class="arrow-right"></span></a>
 					</li>
