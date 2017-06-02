@@ -217,28 +217,28 @@
 										<input type="text" class="form-control input-center" id="" placeholder="آدرس">
 									</div>
 									<div class="col-sm-6 col-lg-2 col-lg-offset-1">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="کد پستی">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="کد پستی">
 									</div>
 									<div class="col-sm-2 col-xs-4">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="زنگ">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="زنگ">
 									</div>
 									<div class="col-sm-2 col-xs-4">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="واحد">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="واحد">
 									</div>
 									<div class="col-sm-2 col-xs-4">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="پلاک">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="پلاک">
 									</div>
 									<div class="col-xs-8 col-sm-4">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="تلفن ثابت">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="تلفن ثابت">
 									</div>
 									<div class="col-xs-4 col-sm-2">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="021">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="021">
 									</div>
 									<div class="col-xs-8 col-sm-4">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="تلفن همراه">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="تلفن همراه">
 									</div>
 									<div class="col-xs-4 col-sm-2">
-										<input type="number" class="form-control input-center text-left" id="" placeholder="--09">
+										<input type="text" class="form-control input-center text-left" id="" placeholder="--09">
 									</div>
 								</div>
 								<div class="row">
