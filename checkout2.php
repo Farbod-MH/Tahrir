@@ -244,11 +244,10 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-6 pull-left">
 										<button type="submit" class="btn btn-primary btn-block">ثبت</button>
-
 									</div>
 								</div>
+							</form>
 						</div>
-						</form>
 					</div>
 				</div>
 			</div>
