@@ -31,27 +31,34 @@
 			                             <option value="">خودکار</option>
 			                             <option value="">خودکار</option>
 			                         </select>
-							</div><!-- form-group -->
-						</div><!-- col-md-3 -->
+							</div>
+							<!-- form-group -->
+						</div>
+						<!-- col-md-3 -->
 						<div id="datepickerfromContainer" class="col-md-3 col-sm-3">
 							<label for="datepickerfrom" class="select-text-datepicker">
 				                    انتخاب تاریخ - از
                     			</label>
 							<input type="text" id="datepickerfrom" class="datepicker" />
-						</div><!-- col-md-3 -->
+						</div>
+						<!-- col-md-3 -->
 						<div id="datepickertoContainer" class="col-md-3 col-sm-3">
 							<label for="datepickerto" class="select-text-datepicker">
 			                        انتخاب تاریخ - تا
 						    </label>
 							<input type="text" id="datepickerto" class="datepicker" />
-						</div><!-- col-md-3 -->
+						</div>
+						<!-- col-md-3 -->
 						<div class="col-md-3 col-sm-3">
 							<a href="#" title="چاپ" onclick="window.print()"><img src="_img/_svg/print.svg" alt="چاپ" class="price-icons"></a>
 							<a href="#" title="دانلود PDF"><img src="_img/_svg/pdf.svg" alt="دانلود PDF" class="price-icons"></a>
 						</div>
-					</div><!-- top-bar Row -->
-				</div><!-- top-bar -->
-			</div><!-- col-md-12 -->
+					</div>
+					<!-- top-bar Row -->
+				</div>
+				<!-- top-bar -->
+			</div>
+			<!-- col-md-12 -->
 			<!-- when two tables are required, use the next three divs -->
 			<div class="col-md-6 table-container">
 				<table class="table table-striped table-responsive  box border shadow table-condensed-xs">
@@ -190,7 +197,8 @@
 						</tr>
 					</tbody>
 				</table>
-			</div><!-- table-container col-md-6 -->
+			</div>
+			<!-- table-container col-md-6 -->
 			<div class="col-md-6 table-container clearfix">
 				<table class="table table-striped table-responsive table-condensed-xs box border shadow">
 					<thead>
@@ -328,27 +336,31 @@
 						</tr>
 					</tbody>
 				</table>
-			</div> <!-- table-container col-md-6 -->
-			 <div class="col-md-6 pull-left">
-				<nav aria-label="Page navigation">
-					<ul class="pagination">
-						<li>
-							<a href="#" aria-label="Previous">
+			</div>
+			<!-- table-container col-md-6 -->
+			<div class="col-md-12">
+				<div class="box border shadow clearfix pagination-container">
+					<nav aria-label="Page navigation">
+						<ul class="pagination ">
+							<li>
+								<a href="#" aria-label="Previous">
 								<span class="arrow-right"></span>
 							</a>
-						</li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li>
-							<a href="#" aria-label="Next">
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li>
+								<a href="#" aria-label="Next">
 								<span class="arrow-left"></span>
 							</a>
-						</li>
-					</ul>
-				</nav>
-			</div> <!-- col-md-6 -->
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- col-md-6 -->
 			<!-- when a single table is required use this table -->
 			<!-- <div class="col-md-12 table-container">
 				<div class="box border shadow clearfix">
@@ -508,33 +520,36 @@
 						</ul>
 					</nav>
 				</div> <!-- box border shadow -->
-			<!-- </div> --><!-- table-container -->
-		</div><!-- container row -->
-	</div><!-- container -->
+			<!-- </div> -->
+			<!-- table-container -->
+		</div>
+		<!-- container row -->
+	</div>
+	<!-- container -->
 
 	<?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
 	<script type="text/javascript">
-	$('#datepickerfrom').datepicker({
-	    onSelect: function(dateText, inst) {
-		   $('#datepickerto').datepicker('option', 'minDate', new JalaliDate(inst['selectedYear'], inst['selectedMonth'], inst['selectedDay']));
-	    }
-	});
-	$('#datepickerto').datepicker();
-	$('#datepickerfrom').on('blur', function(){
-	   $(this).removeClass('datepicker-selected');
-	   $('#datepickerfromContainer').removeClass('datepicker-container');
-	}).on('focus', function(){
-	   $(this).addClass('datepicker-selected');
-	   $('#datepickerfromContainer').addClass('datepicker-container')
-	});
-	$('#datepickerto').on('blur', function(){
-	   $(this).removeClass('datepicker-selected');
-	   $('#datepickertoContainer').removeClass('datepicker-container');
-	}).on('focus', function(){
-	   $(this).addClass('datepicker-selected');
-	   $('#datepickertoContainer').addClass('datepicker-container')
-	});
+		$('#datepickerfrom').datepicker({
+			onSelect: function(dateText, inst) {
+				$('#datepickerto').datepicker('option', 'minDate', new JalaliDate(inst['selectedYear'], inst['selectedMonth'], inst['selectedDay']));
+			}
+		});
+		$('#datepickerto').datepicker();
+		$('#datepickerfrom').on('blur', function() {
+			$(this).removeClass('datepicker-selected');
+			$('#datepickerfromContainer').removeClass('datepicker-container');
+		}).on('focus', function() {
+			$(this).addClass('datepicker-selected');
+			$('#datepickerfromContainer').addClass('datepicker-container')
+		});
+		$('#datepickerto').on('blur', function() {
+			$(this).removeClass('datepicker-selected');
+			$('#datepickertoContainer').removeClass('datepicker-container');
+		}).on('focus', function() {
+			$(this).addClass('datepicker-selected');
+			$('#datepickertoContainer').addClass('datepicker-container')
+		});
 	</script>
 </body>
 

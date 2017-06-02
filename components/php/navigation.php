@@ -157,7 +157,7 @@
 					</li>
 					<li>
 						<span class="list-item-icon accounting-icon"></span>
-						<a title="سیستم حسابداری" href="#">سیستم حسابداری<span class="arrow-right"></span></a>
+						<a title="سیستم حسابداری" href="accounting.php">سیستم حسابداری<span class="arrow-right"></span></a>
 					</li>
 					<li>
 						<span class="list-item-icon invoice-search-icon"></span>

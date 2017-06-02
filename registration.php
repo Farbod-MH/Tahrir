@@ -202,16 +202,16 @@
                                    <input type="text" class="form-control input-center" id="" placeholder="آدرس">
                                    <div class="row address-information">
                                         <div class="col-md-4 col-xs-4">
-                                             <input type="text" class="form-control input-center" id="" placeholder="زنگ">
+                                             <input type="text" class="form-control input-center text-left" id="" placeholder="زنگ">
                                         </div>
                                         <div class="col-md-4 col-xs-4">
-                                             <input type="text" class="form-control input-center" id="" placeholder="واحد">
+                                             <input type="text" class="form-control input-center text-left" id="" placeholder="واحد">
                                         </div>
                                         <div class="col-md-4 col-xs-4">
-                                             <input type="text" class="form-control input-center" id="" placeholder="پلاک">
+                                             <input type="text" class="form-control input-center text-left" id="" placeholder="پلاک">
                                         </div>
                                    </div>
-                                   <input type="text" class="form-control input-center" id="" placeholder="کد پستی">
+                                   <input type="text" class="form-control input-center text-left" id="" placeholder="کد پستی">
                                    <button type="submit" class="btn btn-primary btn-block">ثبت</button>
                               </form>
                          </div>

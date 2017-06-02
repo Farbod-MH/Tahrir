@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	//navigation functions
     $("#show-main-nav").on("click", function() {
         $(".account-nav").fadeOut("fast" , function() {
             $(".main-nav").fadeIn("slow");
@@ -15,13 +16,16 @@ $(document).ready(function() {
             $('.products .main-nav .dropdown').addClass('open');
         });
     });
-
+	//
+	//add-account functions
     $('#input-send').click(function() {
     var numberBox = $('#input-number').val();
     $('#input-text').val(wordifyRials(numberBox));
     });
     $('#number1').val("");
     $('#number2').val("");
+    //
+    //product-detail carousels
     $('#products-carousel-1').carousel({ interval: 0 });
     $('#products-carousel-2').carousel({ interval: 0 });
     $('.products-carousel .item').each(function() {
@@ -34,6 +38,7 @@ $(document).ready(function() {
         itemToClone.children(':first-child').clone().addClass("cloneditem-" + (i)).appendTo($(this));
       }
     });
+    //
 });
 
 function addCommas(nStr){
