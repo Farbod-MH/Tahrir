@@ -19,7 +19,7 @@
 								<label for="selectpicker" class="select-text">
                            				 انتخاب کالا -
                       				</label>
-								<select id="selectpicker" class="selectpicker" name="" multiple title="همه" data-selected-text-format="count>1" data-size="6" data-width="100%" data-container="body">
+								<select id="selectpicker" class="selectpicker" name="" title="همه" data-size="6" data-width="100%" data-container="body">
 			                             <option value="">خودکار</option>
 			                             <option value="">خودکار</option>
 			                             <option value="">خودکار</option>
@@ -36,17 +36,32 @@
 						</div>
 						<!-- col-md-3 -->
 						<div id="datepickerfromContainer" class="col-md-3 col-sm-3">
-							<label for="datepickerfrom" class="select-text-datepicker">
-				                    انتخاب تاریخ - از
+							<label for="datepicker" class="select-text-datepicker">
+				                    برو به
                     			</label>
-							<input type="text" id="datepickerfrom" class="datepicker" />
+							<input type="text" id="datepicker" class="datepicker" />
 						</div>
-						<!-- col-md-3 -->
-						<div id="datepickertoContainer" class="col-md-3 col-sm-3">
-							<label for="datepickerto" class="select-text-datepicker">
-			                        انتخاب تاریخ - تا
-						    </label>
-							<input type="text" id="datepickerto" class="datepicker" />
+						<div class="col-md-3 col-sm-3">
+
+								<nav aria-label="Page navigation" class="pagination-container">
+									<ul class="pagination ">
+										<li>
+											<a href="#" aria-label="Previous">
+											<span class="arrow-right"></span>
+										</a>
+										</li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li>
+											<a href="#" aria-label="Next">
+											<span class="arrow-left"></span>
+										</a>
+										</li>
+									</ul>
+								</nav>
+
 						</div>
 						<!-- col-md-3 -->
 						<div class="col-md-3 col-sm-3">
@@ -338,28 +353,7 @@
 				</table>
 			</div>
 			<!-- table-container col-md-6 -->
-			<div class="col-md-12">
-				<div class="box border shadow clearfix pagination-container">
-					<nav aria-label="Page navigation">
-						<ul class="pagination ">
-							<li>
-								<a href="#" aria-label="Previous">
-								<span class="arrow-right"></span>
-							</a>
-							</li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-								<span class="arrow-left"></span>
-							</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+
 			<!-- col-md-6 -->
 			<!-- when a single table is required use this table -->
 			<!-- <div class="col-md-12 table-container">
@@ -530,25 +524,13 @@
 	<?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
 	<script type="text/javascript">
-		$('#datepickerfrom').datepicker({
-			onSelect: function(dateText, inst) {
-				$('#datepickerto').datepicker('option', 'minDate', new JalaliDate(inst['selectedYear'], inst['selectedMonth'], inst['selectedDay']));
-			}
-		});
-		$('#datepickerto').datepicker();
-		$('#datepickerfrom').on('blur', function() {
+		$('#datepicker').datepicker();
+		$('#datepicker').on('blur', function() {
 			$(this).removeClass('datepicker-selected');
 			$('#datepickerfromContainer').removeClass('datepicker-container');
 		}).on('focus', function() {
 			$(this).addClass('datepicker-selected');
 			$('#datepickerfromContainer').addClass('datepicker-container')
-		});
-		$('#datepickerto').on('blur', function() {
-			$(this).removeClass('datepicker-selected');
-			$('#datepickertoContainer').removeClass('datepicker-container');
-		}).on('focus', function() {
-			$(this).addClass('datepicker-selected');
-			$('#datepickertoContainer').addClass('datepicker-container')
 		});
 	</script>
 </body>

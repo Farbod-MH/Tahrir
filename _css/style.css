@@ -880,8 +880,9 @@ h3.page-title {
 
 /****************************************/
 .price .bootstrap-select>.dropdown-toggle.btn-default,
-.price .bootstrap-select>.dropdown-toggle {
-    padding-right: 100px;
+.price .bootstrap-select>.dropdown-toggle,
+input[type="text"].datepicker {
+    padding-right: 80px;
 }
 
 .bootstrap-select>.dropdown-toggle.btn-default,
@@ -1086,8 +1087,11 @@ table {
     background-color: #f8f8f8;
 }
 .pagination {
-    margin: 10px 0 10px 30px;
-    float: left;
+    margin: 5px auto 0;
+}
+
+.pagination-container {
+    text-align: center;
 }
 .pagination li {
     float: left;
@@ -1096,6 +1100,7 @@ table {
 .pagination li a {
     border-color: #003366;
     border-radius: 5px;
+    padding: 4px 8px;
 }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
@@ -1120,9 +1125,13 @@ table {
     background-color: transparent;
 }
 
-.price .col-md-12 .pagination-container .pagination {
-    margin: 10px 0 0 0;
+.pagination .arrow-left,
+.pagination .arrow-right {
+    height: 20px;
+    background-position-y: 4px;
 }
+
+
 /****************************************/
 
 
@@ -1495,19 +1504,25 @@ table {
     color: #003366;
 }
 
-.product-container .col-xs-12 .col-xs-3 span {
+.product-container .col-xs-12 .col-xs-3 p {
+    position: absolute;
     line-height: 31px;
     color: #484848;
     font-weight: 500;
 }
 
-.product-container .col-xs-12 .col-xs-3:first-child span {
+.product-container .col-xs-12 .col-xs-3 span {
+
+}
+
+.product-container .col-xs-12 .col-xs-3 input {
     border: 1px solid #003366;
     border-radius: 5px;
-    width: 31px;
+    width: 100%;
     height: 31px;
     display: block;
     margin: 0 auto;
+    padding: 5px;
 }
 
 /***********************************************/
@@ -2031,6 +2046,9 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .checkout .registration .bootstrap-select>.dropdown-toggle.bs-placeholder {
         height: 44px;
     }
+    input[type="text"].datepicker {
+        padding-right: 50px;
+    }
 }
 
 @media all and (min-width: 768px) and (transform-3d),
@@ -2198,7 +2216,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         width: 90px;
     }
     input[type="text"].datepicker {
-        padding-right: 100px;
         font-size: 13px;
         padding-left: 0;
         padding-top: 7px;
@@ -2322,10 +2339,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .ui-datepicker {
         width: 200px;
     }
-    input[type="text"].datepicker {
-        padding-right: 110px;
-        font-size: 13px;
-    }
     .price-icons {
         height: 35px;
     }
@@ -2375,6 +2388,9 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     }
     .accounting .ui-datepicker {
         width: 206px;
+    }
+    .product-container .col-xs-12 .col-xs-3 input {
+        width: 40px;
     }
 }
 
@@ -2447,6 +2463,9 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     }
     .checkout .col-md-12>h1  {
         font-size: 32px;
+    }
+    .products .product-container .bootstrap-select.btn-group .dropdown-toggle .caret {
+        left: 5px;
     }
 }
 
