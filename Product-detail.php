@@ -69,17 +69,17 @@
 		                                        <div class="col-xs-12">
 		                                             <div class="row">
 		                                             	<div class="col-xs-3">
-		                                                  	<input type="text" class="input-center text-center" id="productQuantity1" placeholder="تعداد">
+		                                                  	<input type="text" class="input-center text-center product-quantity" placeholder="تعداد">
 		                                             	</div>
 		                                             	<div class="col-xs-6">
-		                                                  	<select name="product-package" onchange="calculateQuantity(1)" id="productPackage1" title="واحد شمارش" class="form-control selectpicker">
+		                                                  	<select name="product-package" title="واحد شمارش" class="form-control selectpicker product-package">
 			                                                       <option value="6">جین</option>
 			                                                       <option value="12">دوجین</option>
 		                                                  	</select>
 		                                             	</div>
 		                                             	<div class="col-xs-3">
 		                                                  	<p>
-		                                                       	<span id="productFinal1">
+		                                                       	<span class="product-final">
 		                                                       	     0
 		                                                       	</span>
 		                                                       	عدد
@@ -254,11 +254,18 @@
 				loadingMessage: '<div class="ekko-lightbox-loader"><div><div></div><div>wait</div></div></div>'
 			});
 		});
-		function calculateQuantity (a) {
-			var values = $('#productPackage'+ a).selectpicker('val');
-			var quantity = $('#productQuantity'+ a).val();
-			$('#productFinal'+ a).text(values * quantity);
-		}
+		$(".product-quantity").on('input', function(){
+			var $this = $(this);
+			var values = $this.val();
+			var quantity = $this.closest('.row').find('.product-package').selectpicker('val');
+			$this.closest('.row').find('.product-final').text(values * quantity);
+		})
+		$( ".product-package" ).change(function() {
+			var $this = $(this);
+			var values = $this.selectpicker('val');
+			var quantity = $this.closest('.row').find('.product-quantity').val();
+			$this.closest('.row').find('.product-final').text(values * quantity);
+		});
 		$(document).ready(function() {
 			//Enable swiping...
 			$(".carousel-inner").swipe( {
