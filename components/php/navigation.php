@@ -1,5 +1,5 @@
 <header>
-	<nav id="sidebar" class="sidebar navmenu navmenu-default navbar-default navmenu-fixed-right offcanvas-sm">
+	<nav id="sidebar" class="sidebar navmenu navmenu-default navbar-default navmenu-fixed-right offcanvas-sm shadow">
 		<div class="sidebar-container">
 			<!-- firefox bug -->
 			<div class="menu-container">
@@ -23,7 +23,7 @@
 				</div>
 
 				<!-- user info -->
-				<!-- <div class="nav-user-details row">
+				 <!-- <div class="nav-user-details row">
 				<div class="col-xs-12">
 					<p>آقای جلالی</p>
 				</div>
@@ -36,14 +36,14 @@
 				<!-- -->
 
 				<!-- sign in and sign up btns -->
-				<div class="log-in row">
+				 <div class="log-in row">
 					<div class="col-xs-6 sign-in">
 						<a href="log-in.php" title="ورود" class="btn btn-primary">ورود</a>
 					</div>
 					<div class="col-xs-6 sign-up">
 						<a href="registration.php" title="ثبت نام" class="btn btn-primary">ثبت نام</a>
 					</div>
-				</div>
+				</div> 
 				<!-- -->
 
 				<form class="navbar-form row" role="search" action="/search" method="post">
@@ -59,15 +59,15 @@
 
 				<div class="products-nav row">
 					<a href="#" id="hide-products-nav" title="بازگشت به منو اصلی" id="back-btn">
-						<div class="col-xs-3 back-btn">
+						<div class="col-xs-12 back-btn">
 							<img src="_img/back-arrow.png" alt="بازگشت به منو اصلی">
 							<span>بازگشت</span>
 						</div>
 					</a>
-					<div class="col-xs-10 products-nav-container">
+					<div class="col-xs-12 products-nav-container">
 						<div class="row">
 							<div class="col-md-12">
-								<span class="products-nav-title">قیمت</span>
+								<span class="products-nav-title">بازه قیمت</span>
 							</div>
 							<div class="col-md-12">
 								<div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
@@ -97,7 +97,9 @@
 										<input type="checkbox" id="brand1" name="brand1" value="" class="brand-checkbox">
 										<label for="brand1">
 											<span class="brand-name">
+												<img src="_img/logo.png" alt="Brand">
 												برند
+												<span class="brand-eng pull-left">Brand</span>
 											</span>
 										</label>
 									</li>
@@ -105,7 +107,9 @@
 										<input type="checkbox" id="brand2" name="brand2" value="" class="brand-checkbox">
 										<label for="brand2">
 											<span class="brand-name">
+												<img src="_img/logo.png" alt="Brand">
 												برند
+												<span class="brand-eng pull-left">Brand</span>
 											</span>
 										</label>
 									</li>
@@ -113,24 +117,30 @@
 										<input type="checkbox" id="brand3" name="brand3" value="" class="brand-checkbox">
 										<label for="brand3">
 											<span class="brand-name">
+												<img src="_img/logo.png" alt="Brand">
 												برند
+												<span class="brand-eng pull-left">Brand</span>
 											</span>
 										</label>
 									</li>
 									<div class="collapse" id="see-more-collapse">
 										<li>
-											<input type="checkbox" id="brand3" name="brand3" value="" class="brand-checkbox">
-											<label for="brand3">
+											<input type="checkbox" id="brand4" name="brand4" value="" class="brand-checkbox">
+											<label for="brand4">
 												<span class="brand-name">
+													<img src="_img/logo.png" alt="Brand">
 													برند
+													<span class="brand-eng pull-left">Brand</span>
 												</span>
 											</label>
 										</li>
 										<li>
-											<input type="checkbox" id="brand3" name="brand3" value="" class="brand-checkbox">
-											<label for="brand3">
+											<input type="checkbox" id="brand5" name="brand5" value="" class="brand-checkbox">
+											<label for="brand5">
 												<span class="brand-name">
+													<img src="_img/logo.png" alt="Brand">
 													برند
+													<span class="brand-eng pull-left">Brand</span>
 												</span>
 											</label>
 										</li>
@@ -204,18 +214,15 @@
 					<li>
 						<span class="list-item-icon rules-icon"></span><a title="قوانین و مقررات" href="Rules"> قوانین و مقررات<span class="arrow-right"></span></a>
 					</li>
+					<li>
+						<span class="list-item-icon about-us-icon"></span><a title="مشتریان ما" href="customers">مشتریان ما<span class="arrow-right"></span></a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer">
 				<div class="row">
-					<div class="col-xs-6">
-						<a title="ایمیل" href="mailto:example@tahrircenter.com"><img src="_img/_svg/mail.svg" alt="email Tahrir Center"></a>
-					</div>
-					<div class="col-xs-6">
-						<a title="تلگرام" href="#"><img src="_img/_svg/telegram.svg" alt="telegram"></a>
-					</div>
 					<div class="col-xs-12">
-						<p> Copyright © Tameshkk.com 2017 </p>
+						<p> Copyright &copy; Tahrircenter.com 2016-2017 </p>
 					</div>
 				</div>
 				<!-- footer row -->
@@ -229,10 +236,12 @@
 	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg shadow">
 		<div class="navbar-header navmenu-brand">
 			<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-			    <img src="_img/hamburger-menu.png" alt="">
+				<span class="line"></span>
+           		<span class="line"></span>
+           		<span class="line"></span>
 			  </button>
 			<a title="نحریر سنتر" href="price.php">
-				<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
+				<img src="_img/logo-eng.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
 			</a>
 		</div>
 		<!-- navbar header -->

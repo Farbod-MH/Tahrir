@@ -6,9 +6,9 @@
      <?php include "components/php/head.php"; ?>
 </head>
 
-<body>
+<body class="page-rules">
      <?php include "components/php/navigation.php";  ?>
-     <div class="container page-rules">
+     <div class="container">
           <div class="row">
                <div class="col-md-12">
                     <div class="box-container box shadow">

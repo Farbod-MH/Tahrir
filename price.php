@@ -6,12 +6,11 @@
 	<?php include "components/php/head.php"; ?>
 </head>
 
-<body>
+<body class="price">
 	<?php include "components/php/navigation.php";  ?>
-
-	<div class="container price">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 hidden-print">
 				<div class="box-container box border shadow top-bar">
 					<div class="row">
 						<div class="col-md-3 col-sm-3">
@@ -31,10 +30,8 @@
 			                             <option value="">خودکار</option>
 			                             <option value="">خودکار</option>
 			                         </select>
-							</div>
-							<!-- form-group -->
-						</div>
-						<!-- col-md-3 -->
+							</div><!-- form-group -->
+						</div><!-- col-md-3 -->
 						<div id="datepickerfromContainer" class="col-md-3 col-sm-3">
 							<label for="datepicker" class="select-text-datepicker">
 				                    برو به
@@ -42,13 +39,12 @@
 							<input type="text" id="datepicker" class="datepicker" />
 						</div>
 						<div class="col-md-3 col-sm-3">
-
 								<nav aria-label="Page navigation" class="pagination-container">
 									<ul class="pagination ">
 										<li>
 											<a href="#" aria-label="Previous">
-											<span class="arrow-right"></span>
-										</a>
+												<span class="arrow-right"></span>
+											</a>
 										</li>
 										<li><a href="#">1</a></li>
 										<li><a href="#">2</a></li>
@@ -56,27 +52,21 @@
 										<li><a href="#">4</a></li>
 										<li>
 											<a href="#" aria-label="Next">
-											<span class="arrow-left"></span>
-										</a>
+												<span class="arrow-left"></span>
+											</a>
 										</li>
 									</ul>
 								</nav>
-
-						</div>
-						<!-- col-md-3 -->
+						</div><!-- col-md-3 -->
 						<div class="col-md-3 col-sm-3">
 							<a href="#" title="چاپ" onclick="window.print()"><img src="_img/_svg/print.svg" alt="چاپ" class="price-icons"></a>
 							<a href="#" title="دانلود PDF"><img src="_img/_svg/pdf.svg" alt="دانلود PDF" class="price-icons"></a>
 						</div>
-					</div>
-					<!-- top-bar Row -->
-				</div>
-				<!-- top-bar -->
-			</div>
-			<!-- col-md-12 -->
-			<!-- when two tables are required, use the next three divs -->
-			<div class="col-md-6 table-container">
-				<table class="table table-striped table-responsive  box border shadow table-condensed-xs">
+					</div><!-- top-bar Row -->
+				</div><!-- top-bar -->
+			</div><!-- col-md-12 -->
+			<div class="col-sm-6 table-container">
+				<table class="table table-striped table-responsive table-hover table-condensed-xs box border shadow">
 					<thead>
 						<tr>
 							<th>ردیف</th>
@@ -88,134 +78,168 @@
 							<th>نمودار</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody data-link="row" class="rowlink" >
 						<tr>
-							<td>1</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>2</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>3</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>4</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>5</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>6</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>7</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>8</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>9</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>10</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>11</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<!-- table-container col-md-6 -->
-			<div class="col-md-6 table-container clearfix">
-				<table class="table table-striped table-responsive table-condensed-xs box border shadow">
+			</div><!-- table-container col-sm-6 -->
+			<div class="col-sm-6 table-container">
+				<table class="table table-striped table-responsive table-hover table-condensed-xs box border shadow">
 					<thead>
 						<tr>
 							<th>ردیف</th>
@@ -227,303 +251,172 @@
 							<th>نمودار</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody data-link="row" class="rowlink" >
 						<tr>
-							<td>1</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>2</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>3</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>4</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>5</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>6</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>7</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>8</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>9</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>10</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>11</td>
-							<td>CPMX</td>
-							<td>کاغذ ک‍‍پی مکس</td>
-							<td>22.5</td>
-							<td>55000</td>
-							<td>22.5</td>
-							<td>
-								<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="Product-detail">1</a></td>
+							<td> CPMX </td>
+							<td> کاغذ ک‍‍پی مکس</td>
+							<td> 22.5</td>
+							<td> 55000</td>
+							<td> 22.5</td>
+							<td class="rowlink-skip">
+								<a href="Product-detail#price-change" title="نوسان قیمت">
+									<img src="_img/_svg/chart.svg" alt="نوسان قیمت" class="table-chart">
+								</a>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<!-- table-container col-md-6 -->
-
-			<!-- col-md-6 -->
-			<!-- when a single table is required use this table -->
-			<!-- <div class="col-md-12 table-container">
-				<div class="box border shadow clearfix">
-					<table id="table" class="table table-striped table-responsive table-condensed-xs">
-						<thead>
-							<tr>
-								<th>ردیف</th>
-								<th>کد کالا</th>
-								<th>توضیحات</th>
-								<th>ابعاد</th>
-								<th>قیمت</th>
-								<th>روند</th>
-								<th>نمودار</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>7</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>10</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>11</td>
-								<td>CPMX</td>
-								<td>کاغذ ک‍‍پی مکس</td>
-								<td>22.5</td>
-								<td>55000</td>
-								<td>22.5</td>
-								<td>
-									<a href="#"><img src="_img/_svg/chart.svg" alt="" class="table-chart"></a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-					<nav aria-label="Page navigation">
-						<ul class="pagination">
-							<li>
-								<a href="#" aria-label="Previous">
-									<span class="arrow-right"></span>
-								</a>
-							</li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-									<span class="arrow-left"></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div> <!-- box border shadow -->
-			<!-- </div> -->
-			<!-- table-container -->
-		</div>
-		<!-- container row -->
-	</div>
-	<!-- container -->
-
+			</div><!-- table-container col-sm-6 -->
+		</div><!-- container row -->
+	</div><!-- container -->
 	<?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
 	<script type="text/javascript">
+		$('tbody').rowlink()
 		$('#datepicker').datepicker();
 		$('#datepicker').on('blur', function() {
 			$(this).removeClass('datepicker-selected');

@@ -11,7 +11,7 @@
      <div class="container">
           <div class="row">
                <div class="col-md-12">
-                    <img src="_img/logo-white.png" alt="logo" class="img-responsive">
+                    <img src="_img/logo.png" alt="logo" class="img-responsive">
                     <h2> ۴۰۴</h2>
                     <p>صفحه مورد نظر پیدا نشد</p>
                </div>

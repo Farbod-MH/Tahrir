@@ -1,12 +1,13 @@
 <!doctype HTML>
-<html lang="fa">
+<html lang="">
 
 <head>
 	<title> سیستم حسابداری</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<?php include "components/php/head.php"; ?>
 </head>
 
-<body class="accounting">
+<body class="account accounting">
 	<?php include "components/php/navigation.php";  ?>
 	<div class="container">
 		<div class="row">
@@ -146,8 +147,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-lg-5">
-
+			<div class="col-md-12 col-lg-5 chart-container">
+				<div id="chartdiv" class="pie-chart"></div>
 			</div>
 		</div>
 		<!-- container row -->
@@ -155,6 +156,55 @@
 	<!-- container -->
 	<?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
+	<script type="text/javascript" src="_js/amcharts.js"></script>
+	<script type="text/javascript" src="_js/pie.js"></script>
+	<script type="text/javascript" src="_js/amcharts.responsive.min.js"></script>
+	<script type="text/javascript">
+		AmCharts.makeChart("chartdiv", {
+			"type": "pie",
+			"dataProvider": [{
+				"product": "خودکار",
+				"quantity": 156.9
+		 	}, {
+				"product": "مداد",
+		   		"quantity": 131.1
+		 	}, {
+				"product": "خودکار",
+				"quantity": 156.9
+			}],
+			"titleField": "product",
+			"valueField": "quantity",
+			"fontFamily" : "IRANSans",
+			"color" : "#484848",
+			"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+			"innerRadius": "70%",
+			"outlineAlpha": 1,
+			"pullOutOnlyOne": true,
+			"labelText": "[[title]]: %[[percents]]",
+			"legend": {
+				"align": "center",
+				"markerType": "circle",
+				"switchable": false,
+				"valueAlign": "left",
+				"maxColumns": 1,
+		 	},
+			"responsive": {
+				"enabled": true,
+		   		"addDefaultRules": true,
+				"rules": [
+				{
+					"minWidth": 500,
+					"overrides": {
+						"legend": {
+							"maxColumns": 3,
+						},
+			  		}
+				}
+		   		]
+		 	}
+		});
+
+	</script>
 	<script type="text/javascript">
 		$('#datepickerfrom').datepicker({
 			onSelect: function(dateText, inst) {

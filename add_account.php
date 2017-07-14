@@ -14,7 +14,7 @@
                 <div class="box-container box border shadow">
                     <h3 class="page-title">نقدی</h3>
                     <!-- when the bank payment is approved show this div, otherwise toggle its class to "hidden" -->
-                    <div class="hover-container">
+                    <div class="hover-container hidden">
                         <div class="hover-bg"></div>
                         <img src="_img/_svg/done.svg" alt="پرداخت با موفقیت انجام شد" class="hover">
                     </div>
@@ -37,7 +37,7 @@
                 <div class="box-container box border shadow">
                     <h3 class="page-title">اعتباری</h3>
                     <!-- contains some information -->
-                    <div class="hover-container hidden" >
+                    <div class="hover-container" >
                         <div class="hover-bg"></div>
                         <img src="_img/_svg/done.svg" alt="پرداخت با موفقیت انجام شد" class="hover">
                     </div>

@@ -6,13 +6,13 @@
      <?php include "components/php/head.php"; ?>
 </head>
 
-<body>
+<body class="about-us-page">
      <?php include "components/php/navigation.php";  ?>
-	
+
      <div class="container">
           <div class="row">
                <div class="col-md-12">
-                    <div class="box-container box shadow about-us-page">
+                    <div class="box-container box shadow">
                          <h2 class="page-title">
                             تَحریر سِنتِر
                          </h2>
@@ -21,19 +21,6 @@
                               ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
                               قرار گیرد.
                          </p>
-                         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-5 logo-container">
-                              <div class="row">
-                                   <div class="col-xs-4">
-                                        <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
-                                   </div>
-                                   <div class="col-xs-4">
-                                        <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
-                                   </div>
-                                   <div class="col-xs-4">
-                                        <a href="#" title="logo"><img src="_img/logo.png" alt="logo" class="img-responsive"></a>
-                                   </div>
-                              </div>
-                         </div> <!-- logo-container -->
                     </div> <!-- box-container -->
                </div> <!-- col-md-12 -->
           </div> <!-- container row -->

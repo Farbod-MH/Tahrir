@@ -13,8 +13,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="box-container">
+				<div class="col-xs-12 breadcrumb-container">
+					<ol class="breadcrumb">
+						<li><a href="price.php">تحریر سنتر</a></li>
+						<li><a href="products.php">محصولات</a></li>
+						<li class="active">کاغذ دبل ای</li>
+					</ol>
+				</div>
 				<div class="col-md-6 col-sm-7 product-img-gallery">
 					<div class="row">
+						<div class="col-md-12">
+							<h1 class="product-title">نام محصول در اینجا</h1>
+						</div>
+						<div class="col-md-12">
+							<h2 class="product-title">Product Name in English</h2>
+						</div>
 						<div class="col-xs-12 col-sm-9 pull-left">
 							<a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="products-gallery" data-type="image">
 								<img src="http://placehold.it/500x500" class="img-responsive product-main-img">
@@ -53,79 +66,35 @@
 								</div>
 								<div class="row">
 									<form action="">
-										<div class="col-xs-12">
-											<div class="col-xs-3 col-lg-2">
-												<span></span>
-											</div>
-											<div class="col-xs-6 col-lg-8">
-												<select name="product-quantity" id="" class="form-control selectpicker" data-size="5">
-		                                                       <option value="">واحد شمارش</option>
-		                                                       <option value="">--</option>
-		                                                       <option value="1">1</option>
-		                                                       <option value="2">2</option>
-		                                                       <option value="3">3</option>
-		                                                       <option value="4">4</option>
-		                                                       <option value="5">5</option>
-		                                                       <option value="6">6</option>
-		                                                       <option value="7">7</option>
-		                                                       <option value="8">8</option>
-		                                                       <option value="9">9</option>
-		                                                       <option value="10">10</option>
-		                                                       <option value="11">11</option>
-		                                                       <option value="12">12</option>
-		                                                       <option value="13">13</option>
-		                                                       <option value="14">14</option>
-		                                                       <option value="15">15</option>
-		                                                       <option value="16">16</option>
-		                                                       <option value="17">17</option>
-		                                                       <option value="18">18</option>
-		                                                       <option value="19">19</option>
-		                                                       <option value="20">20</option>
-		                                                       <option value="21">21</option>
-		                                                       <option value="22">22</option>
-		                                                       <option value="23">23</option>
-		                                                       <option value="24">24</option>
-		                                                       <option value="25">25</option>
-		                                                       <option value="26">26</option>
-		                                                       <option value="27">27</option>
-		                                                       <option value="28">28</option>
-		                                                       <option value="29">29</option>
-		                                                       <option value="30">30</option>
-		                                                       <option value="31">31</option>
-		                                                       <option value="32">32</option>
-		                                                       <option value="33">33</option>
-		                                                       <option value="34">34</option>
-		                                                       <option value="35">35</option>
-		                                                       <option value="36">36</option>
-		                                                       <option value="37">37</option>
-		                                                       <option value="38">38</option>
-		                                                       <option value="39">39</option>
-		                                                       <option value="40">40</option>
-		                                                       <option value="41">41</option>
-		                                                       <option value="42">42</option>
-		                                                       <option value="43">43</option>
-		                                                       <option value="44">44</option>
-		                                                       <option value="45">45</option>
-		                                                       <option value="46">46</option>
-		                                                       <option value="47">47</option>
-		                                                       <option value="48">48</option>
-		                                                       <option value="49">49</option>
-		                                                       <option value="50">50</option>
-		                                                  </select>
-											</div>
-											<div class="col-xs-3 col-lg-2">
-												<span>
-		                                                       عدد
-		                                                  </span>
-											</div>
-										</div>
-										<div class="col-xs-12">
-											<button type="submit" class="btn btn-block btn-success">
+		                                        <div class="col-xs-12">
+		                                             <div class="row">
+		                                             	<div class="col-xs-3">
+		                                                  	<input type="text" class="input-center text-center" id="productQuantity1" placeholder="تعداد">
+		                                             	</div>
+		                                             	<div class="col-xs-6">
+		                                                  	<select name="product-package" onchange="calculateQuantity(1)" id="productPackage1" title="واحد شمارش" class="form-control selectpicker">
+			                                                       <option value="6">جین</option>
+			                                                       <option value="12">دوجین</option>
+		                                                  	</select>
+		                                             	</div>
+		                                             	<div class="col-xs-3">
+		                                                  	<p>
+		                                                       	<span id="productFinal1">
+		                                                       	     0
+		                                                       	</span>
+		                                                       	عدد
+		                                                  	</p>
+
+		                                             	</div>
+		                                        	</div>
+		                                   	</div>
+		                                        <div class="col-xs-12">
+		                                             <button type="submit" class="btn btn-block btn-success">
 		                                                  <img src="_img/_svg/cart.svg" alt="" width="30px">
 		                                                  افزودن به سبد خرید
 		                                             </button>
-										</div>
-									</form>
+		                                        </div>
+		                                   </form>
 								</div>
 							</div>
 						</div>
@@ -144,7 +113,9 @@
                               قرار گیرد.
                          </div>
 						<div role="tabpanel" class="tab-pane" id="condition">شرایط خرید</div>
-						<div role="tabpanel" class="tab-pane" id="price-change">نوسان قیمت</div>
+						<div role="tabpanel" class="tab-pane chart-container" id="price-change">
+							<div id="chartdiv" class="serial-chart" ></div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-12 col-sm-12">
@@ -262,6 +233,19 @@
 	<!-- container -->
 	<?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript" src="_js/ekko-lightbox.min.js"></script>
+	<script type="text/javascript" src="_js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var hash = window.location.hash;
+			hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+			$('.nav-tabs a').click(function (e) {
+			$(this).tab('show');
+			var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+			window.location.hash = this.hash;
+			$('html,body').scrollTop(scrollmem);
+			});
+		});
+	</script>
 	<script type="text/javascript">
 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 			event.preventDefault();
@@ -270,6 +254,184 @@
 				loadingMessage: '<div class="ekko-lightbox-loader"><div><div></div><div>wait</div></div></div>'
 			});
 		});
+		function calculateQuantity (a) {
+			var values = $('#productPackage'+ a).selectpicker('val');
+			var quantity = $('#productQuantity'+ a).val();
+			$('#productFinal'+ a).text(values * quantity);
+		}
+		$(document).ready(function() {
+			//Enable swiping...
+			$(".carousel-inner").swipe( {
+				swipeLeft:function(event, direction, distance, duration, fingerCount) {
+					$(this).parent().carousel('next');
+				},
+				swipeRight: function() {
+					$(this).parent().carousel('prev');
+				},
+				threshold:75
+			});
+		});
+	</script>
+	<script type="text/javascript" src="_js/amcharts.js"></script>
+	<script type="text/javascript" src="_js/serial.js"></script>
+	<script type="text/javascript" src="_js/amcharts.responsive.min.js"></script>
+	<script type="text/javascript">
+		function formatNumbers(value) {
+			var persian = {
+			0: '۰',
+			1: '۱',
+			2: '۲',
+			3: '۳',
+			4: '۴',
+			5: '۵',
+			6: '۶',
+			7: '۷',
+			8: '۸',
+			9: '۹'
+			};
+			var res = String(value);
+			var list = res.match(/[0-9]/g);
+			if (list != null && list.length != 0) {
+				for (var i = 0; i < list.length; i++)
+				res = res.replace(list[i], persian[list[i]]);
+			}
+			return res;
+		}
+
+		function formatBalloon(item) {
+			var res = formatNumbers(item.category) + ': <b>' + formatNumbers(item.values.value) + '</b>';
+			return res;
+		}
+	</script>
+	<script type="text/javascript">
+		AmCharts.makeChart("chartdiv",
+			{
+				"type": "serial",
+				"categoryField": "date",
+				"dataDateFormat": "YYYY-MM-DD",
+				"colors": [
+					"#003366",
+					"#007d00",
+					"#FF6600",
+					"#FCD202",
+					"#B0DE09",
+					"#0D8ECF",
+					"#2A0CD0",
+					"#CD0D74",
+					"#CC0000",
+					"#00CC00",
+					"#0000CC",
+					"#DDDDDD",
+					"#999999",
+					"#333333",
+					"#990000"
+				],
+				"accessibleTitle": "نوسان قیمت",
+				"fontFamily": "IRANSans",
+				"color" : "#484848",
+				"fontWeight" : "normal",
+				"categoryAxis": {
+					"parseDates": true,
+					"titleBold": false,
+					"boldPeriodBeginning": false,
+					"labelFunction": function(label, item) {
+						return formatNumbers(label);
+					}
+				},
+				"chartCursor": {
+					"enabled": true,
+					"categoryBalloonDateFormat": "DD MMM  ",
+					"categoryBalloonText": "[[category]] "
+				},
+				"trendLines": [],
+				"graphs": [
+					{
+						"balloonText": "<span>ریال</span> [[value]]",
+						"bullet": "round",
+						"id": "AmGraph-1",
+						"title": "گارانتی 1",
+						"type": "smoothedLine",
+						"valueField": "column-1",
+					},
+					{
+						"balloonText": " <span>ریال</span> [[value]]",
+						"bullet": "round",
+						"id": "AmGraph-2",
+						"title": "گارانتی 2",
+						"type": "smoothedLine",
+						"valueField": "column-2"
+					}
+				],
+				"guides": [],
+				"valueAxes": [
+					{
+						"id": "ValueAxis-1",
+						"title": "قیمت",
+						"titleBold": false,
+						"titleRotation": -1,
+						"labelFunction": function(label, item) {
+      						return formatNumbers(label);
+    						}
+					}
+				],
+				"allLabels": [],
+				"balloon": {
+					"textAlign": "left",
+				},
+				"legend": {
+					"enabled": true,
+					"switchable": false,
+					"textClickEnabled": true,
+					"maxColumns": 3,
+					"useGraphSettings": true,
+					"valueAlign": "left",
+				},
+				"responsive": {
+		            "enabled": true,
+			  	},
+				"titles": [
+					{
+						"id": "Title-1",
+						"size": 14,
+						"text": "نوسان قیمت",
+						"color": "#003366",
+					}
+				],
+				"dataProvider": [
+					{
+						"date": "1396-03-01",
+						"column-1": 8,
+						"column-2": 49
+					},
+					{
+						"date": "1396-03-02",
+						"column-1": 6,
+						"column-2": 98
+					},
+					{
+						"date": "1396-03-03",
+						"column-1": 2,
+						"column-2": 44
+					},
+					{
+						"date": "1396-03-04",
+						"column-1": 1,
+						"column-2": 2
+					},
+					{
+						"date": "1396-03-05",
+						"column-1": 2,
+						"column-2": 38
+					},
+					{
+						"date": "1396-03-06",
+						"column-1": 3,
+						"column-2": 26
+					},
+
+				]
+			}
+		);
 	</script>
 </body>
 

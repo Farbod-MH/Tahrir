@@ -171,11 +171,15 @@
 					<img src="_img/factor.png" id="modalImg" alt="" class="img-responsive">
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary pull-left" data-dismiss="modal">بستن</button>
-					<div class="col-md-5 col-xs-6 pull-right">
-						<a href="#" title="چاپ" onclick="printImg()"><img src="_img/_svg/print.svg" alt="" class="price-icons"></a>
-						<a href="#" title="دانلود PDF"><img src="_img/_svg/pdf.svg" alt="" class="price-icons"></a>
-					</div>
+					<div class="row">
+						<div class="col-md-4 col-xs-6">
+							<a href="#" title="چاپ" onclick="printImg()"><img src="_img/_svg/print.svg" alt="" class="price-icons"></a>
+							<a href="#" title="دانلود PDF"><img src="_img/_svg/pdf.svg" alt="" class="price-icons"></a>
+						</div>
+						<div class="col-md-2 col-xs-4 pull-left">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">بستن</button>
+						</div>
+					</div><!-- modal-footer row -->
 				</div><!-- modal-footer -->
 			</div><!-- modal-content -->
 		</div><!-- modal-dialog -->

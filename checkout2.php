@@ -242,12 +242,100 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-sm-6 pull-left">
+									<div class="col-xs-12 col-sm-6 col-lg-4 pull-left">
 										<button type="submit" class="btn btn-primary btn-block">ثبت</button>
 									</div>
 								</div>
 							</form>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 address-select">
+				<div class="box-container box border shadow">
+					<h3 class="page-title">انتخاب آدرس</h3>
+					<div class="form-container">
+						<form class="form-inline">
+							<div class="address-container">
+								<label for="full-address1" class="address-label">
+									<h3>آدرس 1</h3>
+									<div class="form-inline">
+										<div class="row">
+											<div class="form-group col-sm-4">
+												<label for="full-name1">نام : </label>
+												<input type="text" id="full-name1" class="form-control" name="" value="فربد" readonly >
+											</div>
+											<div class="form-group col-sm-8">
+												<label for="address1">آدرس 1 :</label>
+												<input type="text" id="address1" class="form-control address-input" name="" value="ششششششششششششششششششششششششششششششششششششششششششششششششش" readonly>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-sm-4">
+												<label for="postal-code1">کد پستی :</label>
+												<input type="number" id="postal-code1" class="form-control text-left" name="" value="5555555555" readonly >
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="phone-number1">تلفن ثابت :</label>
+												<input type="number" id="phone-number1" class="form-control text-left" name="" value="02111111111" readonly>
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="cell-number1">تلفن همراه :</label>
+												<input type="number" id="cell-number1" class="form-control text-left" name="" value="09122222222" readonly>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-4 col-sm-3 col-lg-2 pull-left">
+												<button type="button" name="change-address" id="changeAddress" class="btn btn-block btn-change">تغییر</button>
+											</div>
+										</div>
+									</div>
+								</label>
+								<input type="radio" id="full-address1" name="address" value="address1">
+							</div>
+							<div class="address-container">
+								<label for="full-address2" class="address-label">
+									<h3>آدرس 2</h3>
+									<div class="form-inline">
+										<div class="row">
+											<div class="form-group col-sm-4">
+												<label for="full-name2">نام : </label>
+												<input type="text" id="full-name2" class="form-control" name="" value="فربد" readonly >
+											</div>
+											<div class="form-group col-sm-8">
+												<label for="address2">آدرس 2 :</label>
+												<input type="text" id="address2" class="form-control address-input" name="" value="ششششششششششششششششششششششششششششششششششششششششششششششششش" readonly>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-sm-4">
+												<label for="postal-code2">کد پستی :</label>
+												<input type="number" id="postal-code2" class="form-control text-left" name="" value="5555555555" readonly >
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="phone-number2">تلفن ثابت :</label>
+												<input type="number" id="phone-number2" class="form-control text-left" name="" value="02222222222" readonly>
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="cell-number2">تلفن همراه :</label>
+												<input type="number" id="cell-number2" class="form-control text-left" name="" value="09222222222" readonly>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-4 col-sm-3 col-lg-2 pull-left">
+												<button type="button" name="change-address" id="changeAddress" class="btn btn-block btn-change">تغییر</button>
+											</div>
+										</div>
+									</div>
+								</label>
+								<input type="radio" id="full-address2" name="address" value="address2">
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-lg-4 pull-left pull-left">
+									<button type="submit" name="button" class="btn btn-primary btn-block">مرحله بعد</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -257,6 +345,19 @@
 	</div>
 	<!-- container -->
 	<?php include "components/php/js_source.php"; ?>
+	<script type="text/javascript">
+		$('.btn-change').click(function(){
+			var $this = $(this);
+			$this.toggleClass('btn-save')
+			if ($this.hasClass('btn-save')) {
+				$this.text('ذخیره');
+				$this.closest('.form-inline').find('input').removeAttr('readonly');
+			} else {
+				$this.text('تغییر');
+				$this.closest('.form-inline').find('input').attr('readonly', true);
+			}
+		});
+	</script>
 </body>
 
 </html>

@@ -175,26 +175,6 @@
 							<a href="#" title="چاپ" onclick="printImg()"><img src="_img/_svg/print.svg" alt="" class="price-icons"></a>
 							<a href="#" title="دانلود PDF"><img src="_img/_svg/pdf.svg" alt="" class="price-icons"></a>
 						</div>
-						<!-- <div class="col-md-6 col-xs-3">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span class="arrow-right"></span>
-										</a>
-									</li>
-									<li><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span class="arrow-left"></span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div> -->
 						<div class="col-md-2 col-xs-4 pull-left">
 							<button type="button" class="btn btn-primary" data-dismiss="modal">بستن</button>
 						</div>

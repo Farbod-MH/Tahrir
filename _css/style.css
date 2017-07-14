@@ -35,6 +35,7 @@ body {
 
 .container {
     max-width: 100%;
+    margin: 50px auto;
 }
 
 h1, h2, h3, h4 {
@@ -77,9 +78,6 @@ h1, h2, h3, h4 {
     background: transparent;
 }
 
-/***************************************************************/
-
-
 /******************************/
 
 
@@ -87,10 +85,6 @@ h1, h2, h3, h4 {
 
 
 /******************************/
-
-
-/***************************************************************/
-
 
 /*vertical navbar*/
 
@@ -103,6 +97,7 @@ h1, h2, h3, h4 {
     overflow-x: hidden;
     padding-top: 30px;
     margin-top: 70px;
+    z-index: 1100;
 }
 
 .sidebar-container {
@@ -127,7 +122,7 @@ h1, h2, h3, h4 {
 .navbar-brand {
     display: inline-block;
     float: left;
-    width: 63px;
+    width: 70px;
     height: 70px;
 }
 
@@ -135,10 +130,63 @@ h1, h2, h3, h4 {
     position: absolute;
     float: left;
     display: block;
-    margin: 14px 15px;
-    padding: 8px 14px;
+    margin: 0;
+    padding: 15px;
     border: none;
+}
 
+.navbar-toggle .line{
+    width: 40px;
+    height: 4px;
+    background-color: #003366;
+    display: block;
+    margin: 7px auto;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-toggle .line:nth-child(2) {
+    background-color: #007d00;
+}
+
+.navbar-toggle.is-active{
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.navbar-toggle.is-active .line:nth-child(2){
+    width: 0px;
+}
+
+.navbar-toggle.is-active .line:nth-child(1),
+.navbar-toggle.is-active .line:nth-child(3){
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.navbar-toggle.is-active .line:nth-child(1){
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.navbar-toggle.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-12px) rotate(90deg);
+    -ms-transform: translateY(-12px) rotate(90deg);
+    -o-transform: translateY(-12px) rotate(90deg);
+    transform: translateY(-12px) rotate(90deg);
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -434,20 +482,6 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     margin-top: 50px;
 }
 
-.footer img {
-    height: 20px;
-}
-
-.footer .col-xs-6:first-child img {
-    display: inline-block;
-    float: left;
-    margin-top: 2px;
-}
-
-.footer .col-xs-6:last-child img {
-    display: inline;
-}
-
 .footer .col-xs-12 p {
     text-align: center;
     margin-top: 10px;
@@ -483,13 +517,14 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 .back-btn {
     background-color: #f8f8f8;
     padding: 0;
-    width: 38px;
+    /*width: 38px;
     position: absolute;
-    height: 100%;
+    height: 100%;*/
 }
 
 .back-btn span {
     display: block;
+    text-align: center;
     margin: 5px 2px;
     font-size: 9px;
     font-weight: 500;
@@ -502,7 +537,7 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 
 .products-nav-container {
     position: relative;
-    right: 38px;
+    /*right: 38px;*/
     border: 1px solid #ebebeb;
     border-bottom: none;
 }
@@ -543,15 +578,10 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 }
 
 .products .ui-widget-content .ui-state-default {
-    width: 20px;
-    height: 23px;
-    background-image: url(../_img/logo.png);
-    background-repeat: no-repeat;
-    background-size: 20px 23px;
-    background-color: transparent;
-    border: none;
-    top: 4px;
-    margin-left: -10px;
+    width: 17px;
+    height: 17px;
+    top: -6px;
+    border-radius: 3px;
     transition: none;
 }
 
@@ -606,8 +636,8 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     display: block;
     position: absolute;
     left: 10px;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     border-radius: 3px;
     border: 1px solid #484848;
 }
@@ -617,8 +647,18 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 }
 
 .brand-container label .brand-name {
+    display: block;
+    width: 100%;
     font-weight: 500;
     color: #003366;
+}
+
+.brand-container label .brand-name img {
+    width: 20px;
+}
+
+.brand-container label .brand-name .brand-eng {
+    padding: 2px 0 0 25px;
 }
 
 .sidebar .see-more-container {
@@ -661,7 +701,6 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 .address {
     height: 270px;
     padding: 20px 60px;
-    margin: 50px auto 0;
 }
 
 .address p {
@@ -714,11 +753,7 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     width: 36px;
 }
 
-.contact-us .col-md-6 {
-    margin: 0 auto 50px;
-}
-
-.contact-us .col-md-6:first-child {
+.contact-us .container .col-md-6:first-child {
     margin-bottom: 29px;
 }
 
@@ -780,22 +815,11 @@ textarea.form-control {
 
 
 /***********************************************/
-.about-us-page {
-    min-height: 600px;
-    padding: 30px 30px 150px;
+.about-us-page .box-container {
+    padding: 30px 30px;
     margin: 50px 0;
     line-height: 2;
     font-size: 16px;
-}
-
-.logo-container {
-    position: absolute;
-    bottom: -40px;
-    left: 10px;
-}
-
-.about-us-page img {
-    margin-right: 10px;
 }
 
 .page-title {
@@ -822,7 +846,7 @@ h3.page-title {
 
 
 /***********************************************/
-.page-rules p,
+.page-rules .box-container p,
 .contract .col-md-6 p {
     font-size: 16px;
     padding: 0 30px;
@@ -834,7 +858,7 @@ h3.page-title {
     margin-top: 50px;
 }
 .page-rules .col-md-12:last-child .box-container {
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 /***********************************************/
 
@@ -844,13 +868,11 @@ h3.page-title {
 
 /***********************************************/
 
-.customers {
-    margin: 50px auto;
-}
 .customers .box-container {
     padding: 20px;
 }
-.customers .page-title {
+
+.customers .container .page-title {
     text-shadow: none;
     text-align: center;
     border-bottom: 1px solid black;
@@ -858,19 +880,34 @@ h3.page-title {
     padding-bottom: 10px;
 }
 
-.customers p {
+.customers .container p {
     font-size: 20px;
 }
 
-.customers .col-lg-2,
-.customers .col-md-3,
-.customers .col-xs-4 {
+.customers .container .col-lg-2,
+.customers .container .col-md-3,
+.customers .container .col-xs-4 {
     margin-bottom: 20px;
 }
-.customers .img-responsive {
+
+.customers .container .img-responsive {
     margin: 0 auto;
 }
 
+.popover {
+    font-family: "IRANSans", sans-serif;
+    max-width: 200px;
+}
+
+.popover-title {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.popover.bottom>.arrow {
+    border-bottom-color: #003366;
+    right: auto;
+}
 
 /****************************************/
 
@@ -881,7 +918,7 @@ h3.page-title {
 /****************************************/
 .price .bootstrap-select>.dropdown-toggle.btn-default,
 .price .bootstrap-select>.dropdown-toggle,
-input[type="text"].datepicker {
+.price input[type="text"].datepicker {
     padding-right: 80px;
 }
 
@@ -959,7 +996,7 @@ input[type="text"].datepicker {
 .price .top-bar,
 .accounting .top-bar {
     padding: 15px;
-    margin: 50px 0 15px;
+    margin-bottom: 15px;
 }
 
 .price .top-bar .col-md-3,
@@ -1031,14 +1068,16 @@ input[type="text"].datepicker {
     float: left;
     margin-right: 10px;
 }
+
 table {
     border-collapse: inherit;
 }
+
 .table-chart {
     width: 25px;
 }
 
-.col-md-6.table-container {
+.price .table-container {
     margin-bottom: 20px;
 }
 
@@ -1068,24 +1107,30 @@ table {
     position: relative;
     background-color: #f8f8f8;
 }
+
 .table > thead > tr >th::after {
     position: absolute;
     left: 0;
     top: 3px;;
     content: url(../_img/line.png);
 }
+
 .table > thead > tr >th:last-child::after {
     content: none;
 }
+
 .table thead > tr {
     background-color: #f8f8f8;
 }
+
 .table-striped > tbody > tr:nth-of-type(2n+1) {
     background-color: transparent;
 }
+
 .table-striped > tbody > tr:nth-of-type(2n) {
     background-color: #f8f8f8;
 }
+
 .pagination {
     margin: 5px auto 0;
 }
@@ -1093,15 +1138,18 @@ table {
 .pagination-container {
     text-align: center;
 }
+
 .pagination li {
     float: left;
     margin-left: 5px;
 }
+
 .pagination li a {
     border-color: #003366;
     border-radius: 5px;
     padding: 4px 8px;
 }
+
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
@@ -1110,10 +1158,12 @@ table {
     background-color: inherit;
     border-color: inherit;
 }
+
 .pagination li:first-child a,
 .pagination li:last-child a {
     border: none;
 }
+
 .pagination>li:first-child>a:hover,
 .pagination>li:first-child>span:hover,
 .pagination>li:first-child>a:focus,
@@ -1142,8 +1192,8 @@ table {
 .invoice-search .container .row .col-md-12:first-child,
 .contract-search .container .row .col-md-12:first-child {
     margin-bottom: 15px;
-    margin-top: 50px;
 }
+
 .invoice-search-form,
 .contract-search-form {
     border: 0;
@@ -1152,38 +1202,48 @@ table {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
 .text-success {
 	color: #007d00;
 }
+
 .text-danger {
 	color: #cc0000;
 }
+
 .account table td {
     font-size: 12px;
     font-weight: 500;
 }
+
 .modal-header {
     padding: 10px 0 0 10px;
     border: none;
 }
+
 .modal-header .close {
     color: #003366;
     opacity: 0.8;
 }
+
 .modal-footer {
     padding-right: 0;
     background-color: #ebebeb;
 }
+
 .modal-footer .col-md-3 {
     padding-right: 0;
 }
+
 .modal-footer img {
     float: right;
     margin-left: 20px;
 }
+
 .modal-footer .col-md-4 a:last-child img {
 	margin-left: 0;
 }
+
 .modal-footer nav li a {
     width: 7px;
 }
@@ -1197,14 +1257,13 @@ table {
 .contract .box-container,
 .add-account .box-container,
 .registration .box-container,
-.log-in-page .box-container,
-.cart .box-container,
-.products .box-container,
-.product-detail .box-container {
+.checkout .address-select .box-container,
+.log-in-page .box-container {
     position: relative;
     margin-top: 50px;
     padding: 20px 0 40px 0;
 }
+
 .contract .box-container form {
     padding: 0 20px;
 }
@@ -1316,7 +1375,8 @@ table {
 }
 
 .registration .form-container,
-.log-in-page .form-container {
+.log-in-page .form-container,
+.checkout .address-select .form-container {
     padding: 0 30px;
 }
 
@@ -1379,7 +1439,6 @@ table {
 
 .cart .box-container {
     padding-bottom: 20px;
-    margin-top: 20px;
 }
 
 .cart .price-icons {
@@ -1417,7 +1476,6 @@ table {
 }
 
 .cart .btn-success {
-    margin-bottom: 30px;
     height: 44px;
     background-color: #007d00;
 }
@@ -1436,12 +1494,25 @@ table {
 
 
 /***********************************************/
-.products .box-container {
-    padding-top: 0;
+
+.products .product-container {
+    padding: 10px;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
 
-.product-container {
-    padding: 10px;
+.products .product-container:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.03);
+    -webkit-font-smoothing: antialiased;
 }
 
 .products .box-container .col-md-6 {
@@ -1511,18 +1582,21 @@ table {
     font-weight: 500;
 }
 
-.product-container .col-xs-12 .col-xs-3 span {
-
-}
 
 .product-container .col-xs-12 .col-xs-3 input {
-    border: 1px solid #003366;
-    border-radius: 5px;
     width: 100%;
+    min-width: 40px;
+    max-width: 50px;
     height: 31px;
     display: block;
     margin: 0 auto;
     padding: 5px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+}
+
+.products .pagination li a {
+    background-color: transparent;
 }
 
 /***********************************************/
@@ -1533,11 +1607,42 @@ table {
 
 /***********************************************/
 
+.breadcrumb-container {
+    margin-top: -20px;
+}
+
+.breadcrumb {
+    margin-bottom: 15px;
+}
+
+.breadcrumb>li+li:before {
+    content: '>>';
+    color: #003366;
+}
+
+.breadcrumb a {
+    color: #9e9c9c
+}
+
+.breadcrumb>.active {
+    color: #003366;
+}
+
+.product-img-gallery h1.product-title {
+    font-size: 28px;
+}
+
+.product-img-gallery h2.product-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* TODO:  */
 
 .product-img-gallery .img-responsive {
     border: 1px solid #004080;;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px
 }
 
 .product-detail .modal-content {
@@ -1565,7 +1670,7 @@ table {
 }
 
 .product-detail .product-container {
-    margin-top: 20px;
+    margin: 20px auto 0;
     padding: 0 0 15px;
     border: 1px solid #004080;
     border-radius: 5px;
@@ -1585,7 +1690,7 @@ table {
 
 .product-detail .nav-tabs {
     border-bottom: none;
-    margin: 20px 0;
+    margin: 22px 0;
 }
 
 .product-detail .nav-tabs>li>a {
@@ -1601,8 +1706,8 @@ table {
 .product-detail .nav-tabs>li.active>a,
 .product-detail .nav-tabs>li.active>a:hover,
 .product-detail .nav-tabs>li.active>a:focus {
-    background-color: #ffffff;
-    border-color: #238f23;
+    background-color: #003366;
+    color: #ffffff;
     margin-right: 0;
 }
 
@@ -1734,6 +1839,20 @@ table {
     font-weight: 300;
 }
 
+.chart-container {
+    direction: ltr;
+}
+
+.chart-container .pie-chart {
+    width: 100%;
+    height: 400px;
+}
+
+.chart-container .serial-chart {
+    width: 100%;
+    height: 400px;
+    background-color: #FFFFFF;
+}
 
 /****************************************/
 
@@ -1743,7 +1862,9 @@ table {
 
 /****************************************/
 
-
+.checkout .container {
+    margin-top: 0;
+}
 
 /*progressbar*/
 .progressbar {
@@ -1772,25 +1893,29 @@ table {
 	content: counter(step);
 	counter-increment: step;
 	width: 25px;
-	line-height: 28px;
+	line-height: 25px;
 	display: block;
 	font-size: 12px;
     font-weight: 500;
-	color: #fdfdfd;
+    color: #ffffff;
 	margin: 0 auto 5px;
     background-image: url(../_img/progressbar.png);
-    background-size: 25px 28px;
+    background-size: 25px;
     background-repeat: no-repeat;
+}
+
+.progressbar li.active::before {
+    color: #003366;
 }
 
 .progressbar li:after {
 	content: '';
 	width: 100%;
-	height: 10px;
+	height: 5px;
 	position: absolute;
 	right: -50%;
     background: #636363;
-	top: 9px;
+	top: 10px;
 	z-index: -1;
 }
 .progressbar li:first-child:after {
@@ -1799,7 +1924,7 @@ table {
 
 .progressbar li.active::before {
     background-image: url(../_img/progressbar-active.png);
-    background-size: 25px 28px;
+    background-size: 25px;
     background-repeat: no-repeat;
 }
 
@@ -1888,10 +2013,68 @@ table {
     margin-bottom: 15px;
 }
 
+.address-container {
+    position: relative;
+}
 
+.address-container h3 {
+    margin: 0 auto 30px;
+}
 
+.checkout .address-select .address-label {
+    width: 100%;
+}
 
-/* TODO:  */
+.checkout .address-container .form-group label {
+    color: #828282;
+    font-weight: 200;
+}
+
+.checkout .address-container .form-inline .row:first-child .form-group label {
+    width: 44px;
+}
+.checkout .address-container .form-inline .row:nth-child(2) .form-group label {
+    width: 65px;
+}
+
+.checkout .address-container .form-control[readonly] {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    font-weight: 200;
+    color: #000;
+}
+
+.checkout .address-container .address-input.form-control[readonly] {
+    width: 75%;
+}
+
+.btn-change {
+    background-color: #636363;
+    color: #fff;
+    font-weight: 200;
+}
+
+.btn-change:active,
+.btn-change:focus,
+.btn-change:hover {
+    color: #fff;
+}
+
+.checkout .address-select input[type="radio"] {
+    position: absolute;
+    left: -20px;
+    top: 60%;
+}
+
+.checkout .address-select button[type="submit"]{
+    margin-top: 20px;
+}
+
 
 /***********************************************/
 
@@ -1938,9 +2121,6 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .form-container {
         padding: 90px;
     }
-    .logo-container {
-        bottom: -60px;
-    }
     .ui-datepicker {
         width: 190px;
         padding: 0;
@@ -1958,15 +2138,15 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .price .bootstrap-select>.dropdown-toggle {
         padding-right: 75px;
     }
+    .price .table-container {
+        margin-bottom: 0;
+    }
     .select-text-datepicker {
         right: 12px;
         top: 10px;
     }
     .accounting .select-text-datepicker {
         right: 22px;
-    }
-    .page-not-found .container {
-        margin-top: 150px;
     }
     .page-not-found .container h2 {
         font-size: 130px;
@@ -1977,7 +2157,7 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .cart .btn-success {
         float: left;
         width: 60%;
-        margin: 0 40px 30px 23px;
+        margin: 0 40px 0 23px;
         width: 200px;
     }
     .products-carousel .carousel-inner>.active.left,
@@ -1999,6 +2179,9 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
         display: block;
     }
     .product-detail .nav-tabs {
+        margin-top: 37px;
+    }
+    .product-img-gallery h1.product-title {
         margin-top: 0;
     }
     .product-img-gallery .col-xs-3 .img-responsive {
@@ -2008,12 +2191,12 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .product-img-gallery .product-main-img {
         height: 296px;
     }
-    .product-detail .product-container {
-        margin-left: 2px;
-    }
     .product-detail .tab-content>.tab-pane {
-        height: 440px;
+        height: 488px;
         overflow: auto;
+    }
+    .chart-container .serial-chart {
+        height: 100%;
     }
     .accounting .top-bar .col-md-6 {
         max-width: 50%;
@@ -2030,15 +2213,16 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     }
     .progressbar li:before {
         width: 50px;
-        line-height: 57px;
+        line-height: 50px;
         font-size: 24px;
-        background-size: 50px 57px;
+        background-size: 50px;
     }
     .progressbar li.active::before {
-        background-size: 50px 57px;
+        background-size: 50px;
     }
     .progressbar li:after {
-        top: 23px;
+        top: 22px;
+        height: 7px;
     }
     .progressbar li span {
         top: -90px;
@@ -2046,8 +2230,20 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .checkout .registration .bootstrap-select>.dropdown-toggle.bs-placeholder {
         height: 44px;
     }
-    input[type="text"].datepicker {
+    .price input[type="text"].datepicker {
         padding-right: 50px;
+    }
+    .checkout .address-container .address-input.form-control {
+        width: 95%;
+    }
+    .checkout .address-container .address-input.form-control[readonly] {
+        width: 85%;
+    }
+    .checkout .address-container .form-control {
+        width: 90%;
+    }
+    .checkout .address-select input[type="radio"] {
+        top: 50%;
     }
 }
 
@@ -2080,7 +2276,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     }
     .container {
         width: 700px;
-        margin: 70px auto;
+        margin: 30px auto;
     }
     #sidebar {
         min-height: 744px;
@@ -2099,6 +2295,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         position: absolute;
         display: table;
         height: 100%;
+	   width: 100%;
         overflow-y: auto;
         overflow-x: hidden;
         top: 0;
@@ -2119,11 +2316,11 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .navbar {
         display: none !important; /* IE8 fix */
     }
-    .back-btn {
+    /*.back-btn {
         position: relative;
         margin-bottom: -5000px;
         padding-bottom: 5000px;
-    }
+    }*/
     .products-nav-container {
         right: 0;
     }
@@ -2148,28 +2345,18 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .nav.nav-stacked {
         margin-top: 5px;
     }
-    .container.contact-us .col-md-6 {
+    .contact-us .container .col-md-6 {
         padding-left: 30px;
         margin-bottom: 0;
-    }
-    .page-rules {
-        margin-bottom: 40px;
-    }
-    .page-rules .box-container,
-    .contract .box-container,
-    .add-account .box-container,
-    .registration .box-container,
-    .cart .box-container,
-    .products .box-container,
-    .product-detail .box-container,
-    .about-us-page {
-        margin-top: 0;
     }
     h3.page-title {
         margin: -60px 0 70px;
         font-size: 50px;
     }
-    .page-rules p,
+    .page-rules .box-container {
+        margin: 50px auto;
+    }
+    .page-rules .box-container p,
     .contract .col-md-6 p {
         font-size: 18px;
     }
@@ -2179,34 +2366,26 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .contract .box-container form {
         padding: 100px 20px;
     }
-    .customers .page-title {
+    .customers .container .page-title {
         padding: 20px;
         margin: 0 60px 30px;
     }
-    .customers p {
+    .customers .container p {
         font-size: 20px;
         padding: 0 20px 30px;
     }
     .price .row .col-md-6:nth-child(2n) {
         padding-left: 20px;
     }
-    .logo-container {
-        bottom: -8px;
-        left: -40px;
-    }
     h2.page-title {
         margin: -75px -35px 50px 0;
         font-size: 60px;
     }
-    .about-us-page {
+    .about-us-page .box-container {
         font-size: 18px;
     }
     .address {
         margin: 0 auto;
-    }
-    .price .top-bar,
-    .accounting .top-bar {
-        margin-top: 0;
     }
     .price .top-bar .col-md-3 {
         padding: 0 3px;
@@ -2217,8 +2396,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     }
     input[type="text"].datepicker {
         font-size: 13px;
-        padding-left: 0;
-        padding-top: 7px;
+	   padding: 7px 120px 7px 0;
     }
     .ui-datepicker {
         width: 187px;
@@ -2228,10 +2406,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     }
     .price-icons {
         height: 30px;
-    }
-    .invoice-search .container .row .col-md-12:first-child,
-    .contract-search .container .row .col-md-12:first-child {
-        margin-top: 0;
     }
     .invoice-search-form,
     .contract-search-form {
@@ -2247,7 +2421,8 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         padding: 30px;
     }
     .registration h3.page-title,
-    .log-in-page h3.page-title {
+    .log-in-page h3.page-title,
+    .checkout .address-select h3.page-title {
         font-size: 40px;
         margin-top: -53px;
     }
@@ -2268,18 +2443,24 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .cart .btn-success {
         margin-bottom: 0;
     }
+    .product-detail .nav-tabs {
+        margin-top: 47px;
+    }
+    .product-detail .tab-content>.tab-pane {
+        height: 425px;
+    }
+    .product-detail .product-container .bootstrap-select>.dropdown-toggle.bs-placeholder {
+        padding-left: 6px;
+    }
+    .product-detail .product-container .bootstrap-select.btn-group .dropdown-toggle .caret {
+        left: 4px;
+    }
     .product-img-gallery .col-xs-3 .img-responsive {
         height: 51px;
         margin-bottom: 10px;
     }
     .product-img-gallery .product-main-img {
         height: initial;
-    }
-    .product-detail .product-container {
-        margin-left: 0;
-    }
-    .product-detail .tab-content>.tab-pane {
-        height: 376px;
     }
     .accounting .datepicker {
         max-width: 350px;
@@ -2313,7 +2494,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
 @media (min-width: 1200px) {
     .container {
         width: 860px;
-        margin: 100px auto;
     }
     .select-text {
         font-size: 12px;
@@ -2355,13 +2535,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .select-text.rial {
         left: -30px;
     }
-    .logo-container {
-        left: -33px;
-        bottom: -2px;
-    }
-    .page-rules {
-        margin-bottom: 70px;
-    }
     .page-not-found .container p {
         font-size: 50px;
     }
@@ -2384,29 +2557,22 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         height: 66px;
     }
     .product-detail .tab-content>.tab-pane {
-        height: 437px;
+        height: 485px;
     }
     .accounting .ui-datepicker {
         width: 206px;
     }
-    .product-container .col-xs-12 .col-xs-3 input {
-        width: 40px;
+    .accounting .chart-container {
+	    margin-top: 88px;
     }
 }
 
 @media (min-width: 1440px) {
     .container {
         width: 1080px;
-        margin: 150px auto;
+        margin: 40px auto;
     }
-    .logo-container {
-        bottom: -20px;
-        left: -50px;
-    }
-    .page-rules {
-        margin-bottom: 120px;
-    }
-    .customers .page-title {
+    .customers .container .page-title {
         margin: 0 200px 30px;
     }
     .invoice-search-form,
@@ -2453,7 +2619,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         margin-bottom: 9px;
     }
     .product-detail .tab-content>.tab-pane {
-        height: 518px;
+        height: 567px;
     }
     .accounting .ui-datepicker {
         width: 270px;
@@ -2472,7 +2638,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
 @media (min-width: 1900px) {
     .container {
         width: 1470px;
-        margin: 220px auto;
+        margin: 50px auto;
     }
     #sidebar {
         width: 300px;
@@ -2496,29 +2662,21 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .cart-icon .badge {
         left: 12px;
     }
-    .about-us-page {
+    .about-us-page .box-container {
         padding: 125px;
         font-size: 20px;
     }
-    .about-us-page .col-lg-6 {
+    .about-us-page .box-container .col-lg-6 {
         width: 33.3333333%;
     }
-    .logo-container {
-        bottom: -20px;
-        left: -65px;
-        width: 35%;
-    }
-    .customers .page-title {
+    .customers .container .page-title {
         margin: 0 250px 30px;
     }
     h3.page-title {
         margin: -75px 0 70px;
         font-size: 72px;
     }
-    .page-rules {
-        margin-bottom: 183px;
-    }
-    .page-rules p,
+    .page-rules .box-container p,
     .contract .col-md-6 p {
         font-size: 20px;
     }
@@ -2569,8 +2727,11 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .product-detail .product-container {
         max-width: 502px;
     }
+    .product-detail .nav-tabs {
+        margin-top: 44px;
+    }
     .product-detail .tab-content>.tab-pane {
-        height: 643px;
+        height: 694px;
     }
     .accounting .col-lg-7,
     .accounting .col-lg-5 {

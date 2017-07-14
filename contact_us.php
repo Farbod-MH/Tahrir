@@ -6,9 +6,9 @@
      <?php include "components/php/head.php"; ?>
 </head>
 
-<body>
+<body class="contact-us">
      <?php include "components/php/navigation.php";  ?>
-     <div class="container contact-us">
+     <div class="container">
           <div class="row">
                <div class="col-md-6">
                     <div class="row">
