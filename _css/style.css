@@ -217,6 +217,7 @@ nav.navbar a {
 }
 
 .cart-icon .badge {
+	width: 24px;
     position: absolute;
     left: 20px;
     top: -10px;
@@ -1247,6 +1248,141 @@ table {
 .modal-footer nav li a {
     width: 7px;
 }
+
+.modal-body h2 {
+    color: #484848;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 auto 10px;
+}
+.modal-body table.information {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-body table.information tbody tr td {
+    text-align: right;
+    padding: 3px;
+}
+
+.modal-body table.information tbody tr td:nth-child(4),
+.modal-body table.information tbody tr:last-child td:last-child {
+    border-left: 1px solid black;
+}
+
+.modal-body table.information tbody tr td.table-title {
+    height: 140px;
+    white-space: nowrap;
+}
+
+.modal-body table.information tbody tr td.table-title > div {
+    transform: translate(0 , 0) rotate(270deg);
+    width: 30px;
+}
+
+.modal-body table.information tbody tr td.table-address {
+    width: 40%;
+    word-break:break-all;
+}
+
+.modal-body .table-container {
+    overflow-x: auto;
+}
+
+.modal-body table.bill {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-width: 1px 1px 0 0;
+    padding: 3px;
+}
+
+.modal-body table.bill tr td {
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    padding: 3px;
+}
+
+.modal-body table.bill>thead:first-child>tr:first-child>th {
+    background-color: #b3b3b3;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    padding: 3px;
+}
+
+.modal-body .bill.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color: #e6e6e6;
+}
+
+.modal-body table.bill > thead > tr >th::after {
+    content: none;
+}
+
+.modal-body table.bill tfoot tr td:first-child {
+    border: 1px solid black;
+}
+
+.modal-body table.bill tfoot tr:first-child td:first-child {
+    vertical-align: top;
+    text-align: right;
+}
+
+.modal-body table.bill tfoot tr:first-child td:nth-child(2),
+.modal-body table.bill tfoot tr:not(:first-child) td:nth-child(1) {
+    text-align: right;
+    border-left: 1px solid black;
+}
+
+.modal-body table.bill tfoot tr td:last-child {
+    border: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+}
+
+.modal-body .signature {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    display: none;
+}
+
+@media print {
+    .modal-body {
+        margin-top: -80px;
+    }
+
+    .modal-body .row .col-md-12:first-child p {
+        font-size: 10px;
+        font-weight: 200;
+        margin-bottom: 2px;
+        position: relative;
+        top: -25px;
+    }
+    .modal-body .row .col-md-12:nth-child(2),
+    /*.modal-body table.bill*/ {
+        position: relative;
+        top: -20px;
+    }
+    .modal-body h2 {
+        font-size: 12px;
+    }
+    .modal-body table.information tbody tr td.table-title > div {
+        transform: translate(-11px , -11px) rotate(270deg);
+    }
+    /*.modal-body table.bill {
+        page-break-inside: auto;
+    }
+    .modal-body table.bill tr {
+        page-break-inside:avoid;
+        page-break-after:auto;
+    }*/
+    /*.modal-body table.bill tfoot {
+        display: table-footer-group;
+    }*/
+    .modal-body table.bill thead {
+        display: table-header-group;
+    }
+}
 /****************************************/
 
 
@@ -1613,6 +1749,7 @@ table {
 
 .breadcrumb {
     margin-bottom: 15px;
+    padding-right: 0;
 }
 
 .breadcrumb>li+li:before {
@@ -1712,6 +1849,7 @@ table {
 }
 
 .product-detail .tab-content>.tab-pane {
+    overflow: auto;
     min-height: 200px;
     border: 1px solid #004080;
     background-color: #ffffff;
@@ -1729,6 +1867,61 @@ table {
 
 .product-detail .nav-tabs .price-change{
     padding-left: 0;
+}
+
+.specs table {
+    border: none;
+    border-spacing: 5px;
+}
+
+.specs table.table-responsive th,
+.specs table.table-responsive td {
+    text-align: right;
+    padding: 8px 10px;
+    width: 50%;
+    word-break: break-all;
+}
+
+.specs table th {
+    background-color: #e6e6e6;
+}
+
+.specs table td {
+    background-color: #f8f8f8;
+}
+
+.specs table caption {
+    padding-right: 5px;
+    color: #003366;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.description-container {
+    padding: 0 5px;
+}
+
+.description-container h3 {
+    font-size: 14px;
+}
+
+.description-container ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.description-container li:before {
+    content: '';
+    border: 2px solid #003366;
+    display: inline-block;
+    position: relative;
+    height: 9px;
+    width: 9px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    top: 1px;
+    right: -10px;
 }
 
 .carousel-inner .col-xs-6,
@@ -2160,6 +2353,13 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
         margin: 0 40px 0 23px;
         width: 200px;
     }
+    .specs table {
+        border-spacing: 10px 5px;
+    }
+    .specs table caption,
+    .description-container {
+        padding-right: 10px;
+    }
     .products-carousel .carousel-inner>.active.left,
     .products-carousel .carousel-inner>.prev {
         left: -25%;
@@ -2245,6 +2445,9 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .checkout .address-select input[type="radio"] {
         top: 50%;
     }
+    .modal-body table.information tbody tr td.table-title > div {
+        transform: translate(-8px , -5px) rotate(270deg);
+    }
 }
 
 @media all and (min-width: 768px) and (transform-3d),
@@ -2277,6 +2480,9 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .container {
         width: 700px;
         margin: 30px auto;
+    }
+    .modal {
+        padding-right: 250px;
     }
     #sidebar {
         min-height: 744px;
@@ -2565,6 +2771,9 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .accounting .chart-container {
 	    margin-top: 88px;
     }
+    .modal-body table.information tbody tr td.table-title > div {
+        transform: translate(-5px , -4px) rotate(270deg);
+    }
 }
 
 @media (min-width: 1440px) {
@@ -2636,9 +2845,15 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
 }
 
 @media (min-width: 1900px) {
+    body {
+        padding-right: 300px;
+    }
     .container {
         width: 1470px;
         margin: 50px auto;
+    }
+    .modal {
+        padding-right: 300px;
     }
     #sidebar {
         width: 300px;
@@ -2649,9 +2864,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .nav a,
     .dropdown-menu>li>a {
         font-size: 14px;
-    }
-    body {
-        padding-right: 300px;
     }
     .sign-in {
         padding-left: 32px;

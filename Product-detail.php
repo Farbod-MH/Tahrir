@@ -107,11 +107,58 @@
 						<li role="presentation" class="col-xs-4 price-change"><a href="#price-change" aria-controls="messages" role="tab" data-toggle="tab">نوسان قیمت</a></li>
 					</ul>
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-                              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-                              ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
-                              قرار گیرد.
-                         </div>
+						<div role="tabpanel" class="tab-pane active" id="description">
+							<div class="specs">
+								<table class="table table-responsive">
+								<caption>مشخصات محصول:</caption>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+								<tr>
+									<th>رنگ</th>
+									<td>قرمز</td>
+								</tr>
+							</table>
+							</div>
+							<div class="description-container">
+								<h3>توضیحات:</h3>
+								<p>
+									<ul>
+										<li>توضیح</li>
+										<li>توضیح</li>
+										<li>توضیح</li>
+										<li>توضیح</li>
+										<li>توضیح</li>
+										<li>توضیح</li>
+									</ul>
+								</p>
+							</div>
+						</div>
 						<div role="tabpanel" class="tab-pane" id="condition">شرایط خرید</div>
 						<div role="tabpanel" class="tab-pane chart-container" id="price-change">
 							<div id="chartdiv" class="serial-chart" ></div>
