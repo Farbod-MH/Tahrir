@@ -46,11 +46,11 @@
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -68,11 +68,11 @@
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -90,11 +90,11 @@
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -112,11 +112,11 @@
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -134,16 +134,56 @@
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
 									</tr>
 									<tr>
 										<td colspan="2">مبلغ</td>
-										<td colspan="2">۵۰۰۰۰۰۰ <span class="label">ریال</span></td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 						<!-- table-container -->
+						<div class="table-container">
+							<table class="table table-responsive box shadow">
+
+								<tbody>
+									<tr>
+										<td>۱۳۹۶ / ۰۱ / ۰۲</td>
+										<td>۱۵:۳۰</td>
+										<td>نقدی</td>
+										<td>برداشت</td>
+									</tr>
+									<tr>
+										<td colspan="2">مبلغ</td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label removal">ریال</span></td>
+									</tr>
+									<tr>
+										<td colspan="2">مبلغ</td>
+										<td colspan="2">۵۰۰۰۰۰۰ <span class="label deposit">ریال</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table-container -->
+							<nav aria-label="Page navigation" class="pagination-container">
+								<ul class="pagination ">
+									<li>
+										<a href="#" aria-label="Previous">
+										<span class="arrow-right"></span>
+									</a>
+									</li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li>
+										<a href="#" aria-label="Next">
+										<span class="arrow-left"></span>
+									</a>
+									</li>
+								</ul>
+							</nav>
 					</div>
 				</div>
 			</div>
@@ -155,7 +195,6 @@
 	</div>
 	<!-- container -->
 	<?php include "components/php/js_source.php"; ?>
-	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
 	<script type="text/javascript" src="_js/amcharts.js"></script>
 	<script type="text/javascript" src="_js/pie.js"></script>
 	<script type="text/javascript" src="_js/amcharts.responsive.min.js"></script>

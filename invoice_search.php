@@ -191,7 +191,7 @@
 			                              </tr>
 			                              <tr>
 			                                   <td rowspan="2">نشانی:</td>
-			                                   <td class="table-address" rowspan="2"> ششششششششششششششششششششششششششششششششششششششششششششششششششششششش</td>
+			                                   <td class="table-address" rowspan="2">اینجا   </td>
 			                                   <td>کد پستی:</td>
 			                                   <td>5555555555</td>
 			                              </tr>
@@ -223,14 +223,14 @@
 			                              </tr>
 			                              <tr>
 										<td>نشانی:</td>
-										<td class="table-address"> ششششششششششششششششششششششششششششششششششششششششششششششششششششششش</td>
+										<td class="table-address"> اینجا  </td>
 			                                   <td>شماره ثبت/ملی:</td>
 			                                   <td>54545454</td>
 			                              </tr>
 			                         </tbody>
 			                    </table>
 							<div class="table-container">
-								<table class="table table-striped table-responsive table-hover table-condensed-xs bill">
+								<table class="table table-striped  table-hover table-condensed-xs table-responsive bill">
 									<thead>
 										<tr>
 											<th>ردیف</th>
@@ -258,7 +258,103 @@
 				                                   <td>70500000</td>
 				                                   <td>70500000</td>
 				                              </tr>
-				                              <tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
 				                                   <td>1</td>
 				                                   <td>000</td>
 				                                   <td>کاغذ دبل ای</td>
@@ -283,6 +379,66 @@
 				                                   <td>70500000</td>
 				                              </tr>
 				                              <tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+				                              <tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
+				                                   <td>1</td>
+				                                   <td>000</td>
+				                                   <td>کاغذ دبل ای</td>
+				                                   <td>500</td>
+				                                   <td>بسته</td>
+				                                   <td>141000</td>
+				                                   <td>70500000</td>
+				                                   <td>0</td>
+				                                   <td>70500000</td>
+				                                   <td>70500000</td>
+				                              </tr>
+										<tr>
 				                                   <td>1</td>
 				                                   <td>000</td>
 				                                   <td>کاغذ دبل ای</td>
@@ -653,9 +809,9 @@
 				                    </table>
 							</div>
 			               </div>
-						<div class="col-md-12 signature">
+						<div class="col-md-12 signature visible-print">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6 pull-right">
 									<p>امضا خریدار</p>
 								</div>
 								<div class="col-md-6 pull-left">
@@ -686,19 +842,8 @@
 		$('.btn-print').on('click',function() {
 			var $this = $(this);
 			var tablesToPrint = $this.closest('.modal-dialog').find('.modal-content').html();
-			// var myStyle = '<link rel="stylesheet" href="_css/bootstrap.min.css">';
-			// var myStyle2 = '<link rel="stylesheet" href="_css/bootstrap-rtl.min.css">';
-			// var myStyle3 = '<link rel="stylesheet" href="_css/style.css">';
-			//
-			// // popup = window.open();
-		     // // popup.document.write(myStyle + myStyle2 + myStyle3 + tablesToPrint);
-		     // // popup.print();
-			//   	newWin = window.open("");
-			//   	newWin.document.write(myStyle + myStyle2 + myStyle3 + tablesToPrint);
-			//   	newWin.print();
-			// newWin.close();
 			$(tablesToPrint).printThis({
-				footer: $(".signature")
+
 			});
 	   	});
 	</script>

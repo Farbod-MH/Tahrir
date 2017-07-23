@@ -43,7 +43,7 @@
 					<div class="col-xs-6 sign-up">
 						<a href="registration.php" title="ثبت نام" class="btn btn-primary">ثبت نام</a>
 					</div>
-				</div> 
+				</div>
 				<!-- -->
 
 				<form class="navbar-form row" role="search" action="/search" method="post">
@@ -53,7 +53,7 @@
 							    <span class= "search-icon"></span>
 						</button>
 						</span>
-						<input type="text" name="search" class="form-control" placeholder="جستجو...">
+						<input type="text" name="search" class="form-control" id="searchInput" placeholder="جستجو...">
 					</div>
 				</form>
 

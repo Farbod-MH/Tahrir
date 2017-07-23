@@ -589,7 +589,6 @@
      </div>
      <!-- container -->
      <?php include "components/php/js_source.php"; ?>
-	<script type="text/javascript" src="_js/jquery-ui.min.js"></script>
      <script type="text/javascript" src="_js/jquery.ui.touch-punch.min.js"></script>
      <script>
                $( "#slider" ).slider({

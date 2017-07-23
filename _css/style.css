@@ -31,6 +31,7 @@ body {
     color: #484848;
     padding: 70px 0 0 0;
     height: 100%;
+    -webkit-print-color-adjust: exact;
 }
 
 .container {
@@ -301,6 +302,11 @@ nav.navbar a {
     padding-right: 0;
 }
 
+.input-group-search .input-group-addon.selected {
+	border-bottom: none;
+	border-bottom-right-radius: 0;
+}
+
 .input-group-search {
     width: 100%;
 }
@@ -323,6 +329,11 @@ nav.navbar a {
     border-color: #849cb4;
 }
 
+.input-group-search .form-control.selected {
+	border-bottom: none;
+     border-bottom-left-radius: 0;
+}
+
 .input-group-search .search-btn {
     border: 0;
     background: transparent;
@@ -330,16 +341,41 @@ nav.navbar a {
     padding-left: 0;
 }
 
-.navbar-form {
+.navbar-default .navbar-form {
     padding: 0;
-    width: 93.33333%;
+    border: none;
+    width: 234px;
     margin: 0 auto;
+}
+
+.ui-autocomplete {
+	z-index: 1110;
+	width: 233px;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-color: #849cb4;
+	border-radius: 0 0 5px 5px;
+	padding-right: 58px;
+}
+
+.ui-autocomplete-category {
+	font-size: 14px;
+	margin-right: -15px;
+	font-weight: 500;
+}
+
+.ui-autocomplete-category::before {
+	content: "-"
 }
 
 .input-group-addon:first-child {
     border-color: #849cb4;
 }
 
+.ui-autocomplete-input {
+    padding-right: 6px;
+}
 
 /*main nav*/
 
@@ -873,7 +909,7 @@ h3.page-title {
     padding: 20px;
 }
 
-.customers .container .page-title {
+.customers .box-container .page-title {
     text-shadow: none;
     text-align: center;
     border-bottom: 1px solid black;
@@ -881,17 +917,17 @@ h3.page-title {
     padding-bottom: 10px;
 }
 
-.customers .container p {
+.customers .box-container p {
     font-size: 20px;
 }
 
-.customers .container .col-lg-2,
-.customers .container .col-md-3,
-.customers .container .col-xs-4 {
+.customers .box-container .col-lg-2,
+.customers .box-container .col-md-3,
+.customers .box-container .col-xs-4 {
     margin-bottom: 20px;
 }
 
-.customers .container .img-responsive {
+.customers .box-container .img-responsive {
     margin: 0 auto;
 }
 
@@ -1053,6 +1089,7 @@ h3.page-title {
 
 .ui-datepicker {
     width: 260px;
+    z-index: 1020;
 }
 
 .select-text-datepicker {
@@ -1272,7 +1309,7 @@ table {
 }
 
 .modal-body table.information tbody tr td.table-title {
-    height: 140px;
+    height: 100px;
     white-space: nowrap;
 }
 
@@ -1295,19 +1332,22 @@ table {
     border: 1px solid black;
     border-width: 1px 1px 0 0;
     padding: 3px;
+    background-clip: padding-box
 }
 
 .modal-body table.bill tr td {
     border: 1px solid black;
     border-width: 0 0 1px 1px;
     padding: 3px;
+    background-clip: padding-box
 }
 
-.modal-body table.bill>thead:first-child>tr:first-child>th {
+.modal-body table.bill> thead:first-child> tr:first-child> th {
     background-color: #b3b3b3;
     border: 1px solid black;
     border-width: 0 0 1px 1px;
     padding: 3px;
+    background-clip: padding-box;
 }
 
 .modal-body .bill.table-striped > tbody > tr:nth-of-type(2n) {
@@ -1340,17 +1380,18 @@ table {
 }
 
 .modal-body .signature {
-    margin-top: 20px;
+    margin-top: 100px;
     font-weight: 500;
     font-size: 14px;
-    display: none;
 }
 
 @media print {
+	.modal-body .table-container {
+	    overflow-x: visible;
+	}
     .modal-body {
         margin-top: -80px;
     }
-
     .modal-body .row .col-md-12:first-child p {
         font-size: 10px;
         font-weight: 200;
@@ -1358,29 +1399,37 @@ table {
         position: relative;
         top: -25px;
     }
-    .modal-body .row .col-md-12:nth-child(2),
-    /*.modal-body table.bill*/ {
+    /*.modal-body .row .col-md-12:nth-child(2),
+    .modal-body table.bill {
         position: relative;
         top: -20px;
-    }
+    }*/
     .modal-body h2 {
         font-size: 12px;
     }
     .modal-body table.information tbody tr td.table-title > div {
-        transform: translate(-11px , -11px) rotate(270deg);
+        transform: translate(-10px , -3px) rotate(270deg);
     }
-    /*.modal-body table.bill {
-        page-break-inside: auto;
+    .modal-body table.bill {
+	    page-break-inside: auto;
     }
     .modal-body table.bill tr {
         page-break-inside:avoid;
-        page-break-after:auto;
-    }*/
-    /*.modal-body table.bill tfoot {
+	   page-break-after:auto;
+    }
+    .modal-body table.bill td,
+    .modal-body table.bill th {
+	   page-break-inside:avoid;
+    }
+    .modal-body table.bill tfoot {
         display: table-footer-group;
-    }*/
-    .modal-body table.bill thead {
+    }
+    .modal-body thead {
         display: table-header-group;
+        visibility: visible;
+    }
+    .modal-body table.bill>thead:first-child>tr:first-child>th {
+        position: static;
     }
 }
 /****************************************/
@@ -1731,7 +1780,8 @@ table {
     border-radius: 5px;
 }
 
-.products .pagination li a {
+.products .pagination li a,
+.accounting .pagination li a {
     background-color: transparent;
 }
 
@@ -2020,8 +2070,16 @@ table {
     position: relative;
     text-align: center;
 }
+
+.accounting .table-responsive tbody tr td span.removal {
+    background-color: #cc0000;
+}
+
+.accounting .table-responsive tbody tr td span.deposit {
+    background-color: #007d00;
+}
+
 .accounting .table-responsive tbody tr td span {
-	background-color: #cc0000;
     border: 1px solid transparent;
     border-radius: 0 5px 5px 0;
 	position: relative;
@@ -2031,6 +2089,7 @@ table {
     color: #fff;
     font-weight: 300;
 }
+
 
 .chart-container {
     direction: ltr;
@@ -2307,6 +2366,12 @@ all and (min-width: 1px) and (-webkit-transform-3d) {
     .container {
         width: 750px;
     }
+    .navbar-default .navbar-form {
+	    width: 265px;
+    }
+    .ui-autocomplete {
+    	width: 264px;
+    }
     .invoice-search-form,
     .contract-search-form {
         width: 30%;
@@ -2485,6 +2550,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         padding-right: 250px;
     }
     #sidebar {
+	   width: 250px;
         min-height: 744px;
         margin-bottom: -50000px;
         padding-bottom: 50000px;
@@ -2492,7 +2558,6 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         padding-top: 0;
         padding-right: 0;
         margin-top: 0;
-        width: 250px;
         -webkit-box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
         -moz-box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
         box-shadow: -3px 5px 12px 0px rgba(0, 0, 0, 0.29);
@@ -2527,6 +2592,12 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         margin-bottom: -5000px;
         padding-bottom: 5000px;
     }*/
+    .navbar-default .navbar-form {
+	    width: 223px;
+    }
+    .ui-autocomplete {
+    	width: 222px;
+    }
     .products-nav-container {
         right: 0;
     }
@@ -2572,11 +2643,11 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .contract .box-container form {
         padding: 100px 20px;
     }
-    .customers .container .page-title {
+    .customers .box-container .page-title {
         padding: 20px;
         margin: 0 60px 30px;
     }
-    .customers .container p {
+    .customers .box-container p {
         font-size: 20px;
         padding: 0 20px 30px;
     }
@@ -2781,7 +2852,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
         width: 1080px;
         margin: 40px auto;
     }
-    .customers .container .page-title {
+    .customers .box-container .page-title {
         margin: 0 200px 30px;
     }
     .invoice-search-form,
@@ -2861,6 +2932,12 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .navbar-icon {
         height: 30px;
     }
+    .navbar-default .navbar-form {
+	    width: 265px;
+    }
+    .ui-autocomplete {
+	    width: 264px;
+    }
     .nav a,
     .dropdown-menu>li>a {
         font-size: 14px;
@@ -2881,7 +2958,7 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .about-us-page .box-container .col-lg-6 {
         width: 33.3333333%;
     }
-    .customers .container .page-title {
+    .customers .box-container .page-title {
         margin: 0 250px 30px;
     }
     h3.page-title {

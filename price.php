@@ -414,7 +414,6 @@
 		</div><!-- container row -->
 	</div><!-- container -->
 	<?php include "components/php/js_source.php"; ?>
-	<script type="text/javascript" src="_js/persian-datepicker.min.js"></script>
 	<script type="text/javascript">
 		$('tbody').rowlink()
 		$('#datepicker').datepicker();
