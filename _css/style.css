@@ -396,6 +396,12 @@ nav.navbar a {
     font-weight: 500;
 }
 
+.main-nav > li > a.active {
+    background-color: transparent;
+    color: #003366;
+    font-weight: 500;
+}
+
 .nav.nav-stacked li {
     border-bottom: 1px solid #849cb4;
 }
@@ -707,6 +713,27 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
 
 /*navigation*/
 
+/***********************************************/
+
+
+/*index Page*/
+
+
+/***********************************************/
+
+
+.full-height:focus {
+    outline: none;
+}
+
+.full-height.price {
+    min-height: 1150px
+}
+
+.index .container {
+    margin-bottom: 0;
+}
+
 
 /**************************************************************************
 
@@ -906,7 +933,8 @@ h3.page-title {
 /***********************************************/
 
 .customers .box-container {
-    padding: 20px;
+    padding: 20px 20px 0;
+    margin: 100px auto;
 }
 
 .customers .box-container .page-title {
@@ -2545,6 +2573,14 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
     .container {
         width: 700px;
         margin: 30px auto;
+    }
+    .index .container {
+        margin: 0 auto;
+    }
+    .full-height {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .modal {
         padding-right: 250px;

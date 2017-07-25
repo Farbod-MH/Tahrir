@@ -194,7 +194,7 @@
 
 					<li>
 						<span class="list-item-icon chart-icon"></span>
-						<a title="استعلام قیمت" href="price.php">  استعلام قیمت<span class="arrow-right"></span></a>
+						<a title="استعلام قیمت"  href="index#price">  استعلام قیمت<span class="arrow-right"></span></a>
 					</li>
 					<li class="dropdown">
 						<span class="list-item-icon products-icon"></span>
@@ -209,13 +209,13 @@
 						</ul>
 					</li>
 					<li>
-						<span class="list-item-icon about-us-icon"></span><a title="درباره ما" href="About_Us.php"> درباره ما<span class="arrow-right"></span></a>
+						<span class="list-item-icon about-us-icon"></span><a title="درباره ما" href="index#about-us-page"> درباره ما<span class="arrow-right"></span></a>
 					</li>
 					<li>
-						<span class="list-item-icon rules-icon"></span><a title="قوانین و مقررات" href="Rules"> قوانین و مقررات<span class="arrow-right"></span></a>
+						<span class="list-item-icon rules-icon"></span><a title="قوانین و مقررات" href="index#page-rules"> قوانین و مقررات<span class="arrow-right"></span></a>
 					</li>
 					<li>
-						<span class="list-item-icon about-us-icon"></span><a title="مشتریان ما" href="customers">مشتریان ما<span class="arrow-right"></span></a>
+						<span class="list-item-icon about-us-icon"></span><a title="مشتریان ما" href="index#customers">مشتریان ما<span class="arrow-right"></span></a>
 					</li>
 				</ul>
 			</div>
