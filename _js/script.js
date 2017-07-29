@@ -17,12 +17,13 @@ $(document).ready(function() {
           $this.css('min-height' , $(this).height() );
       });
     });
-  })
-  var topoffset = 70;
+  });
+  var topoffset = 80;
   if ($(window).width() > 992) {
     topoffset = 0;
   }
   $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+    console.log(topoffset);
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       &&
@@ -36,7 +37,7 @@ $(document).ready(function() {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top - topoffset
+          scrollTop: target.offset().top
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
@@ -53,24 +54,25 @@ $(document).ready(function() {
     }
   });
 	$(window).scroll(function () {
-		var windowsPos = $(window).scrollTop() + topoffset;
+    console.log(topoffset);
+		var windowsPos = $(window).scrollTop();
     $(".main-nav>li>a").removeClass("active");
     if (windowsPos > $("#price").offset().top) {
       $(".main-nav>li>a").removeClass("active");
       $("a[href$='#price']").addClass("active");
-    }
+    };
     if (windowsPos > $("#about-us-page").offset().top) {
       $(".main-nav>li>a").removeClass("active");
       $("a[href$='#about-us-page']").addClass("active");
-    }
+    };
     if (windowsPos > $("#page-rules").offset().top) {
       $(".main-nav>li>a").removeClass("active");
       $("a[href$='#page-rules']").addClass("active");
-    }
+    };
     if (windowsPos > $("#customers").offset().top) {
       $(".main-nav>li>a").removeClass("active");
       $("a[href$='#customers']").addClass("active");
-    }
+    };
 	})
   //
 	//navigation functions

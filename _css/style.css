@@ -734,6 +734,10 @@ li.dropdown.open>a.dropdown-toggle>.arrow-right {
     margin-bottom: 0;
 }
 
+.full-height > .row {
+    width: 100%;
+}
+
 
 /**************************************************************************
 
