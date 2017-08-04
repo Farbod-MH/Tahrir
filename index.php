@@ -416,131 +416,131 @@
 						</div><!-- table-container col-sm-6 -->
 					</div>
                     </div>
-				<div class="about-us-page full-height" id="about-us-page">
-					<div class="row">
-			               <div class="col-md-12">
-			                    <div class="box-container box shadow">
-			                         <h2 class="page-title">
-			                            تَحریر سِنتِر
-			                         </h2>
-			                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-			                              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-			                              ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
-			                              قرار گیرد.
-			                         </p>
-			                    </div> <!-- box-container -->
-			               </div> <!-- col-md-12 -->
-			          </div>
-				</div>
-				<div class="page-rules full-height" id="page-rules">
-					<div class="row">
-			               <div class="col-md-12">
-			                    <div class="box-container box shadow">
-			                         <h3 class="page-title">قوانین و مقررات</h3>
-			                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-			                              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-			                              ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
-			                              قرار گیرد.</p>
-			                    </div> <!-- box-container -->
-			               </div><!-- col-md-12 -->
-			               <div class="col-md-12">
-			                    <div class="box-container box shadow">
-			                         <h3 class="page-title">شرایط خرید</h3>
-			                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-			                              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-			                              ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
-			                              قرار گیرد.</p>
-			                    </div> <!-- box-container -->
-			               </div> <!-- col-md-12 -->
-			          </div>
-				</div>
-				<div class="customers full-height" id="customers">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="box-container box shadow">
-								<h3 class="page-title">
-								عنوان در اینجا
-			              			</h3>
-								<p>
-									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-								</p>
+				<div class="full-height" id="about-us-page">
+					<div class="about-us-page">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="box-container box shadow">
+									<h2 class="page-title">
+										تَحریر سِنتِر
+									</h2>
+									<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+										ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+										ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+										قرار گیرد.
+									</p>
+								</div> <!-- box-container -->
+							</div> <!-- col-md-12 -->
+						</div>
+					</div>
+					<div class="page-rules" >
+						<div class="row">
+							<div class="col-md-12">
+								<div class="box-container box shadow">
+									<h3 class="page-title">قوانین و مقررات</h3>
+									<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+										ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+										ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+										قرار گیرد.</p>
+									</div> <!-- box-container -->
+								</div><!-- col-md-12 -->
+								<div class="col-md-12">
+									<div class="box-container box shadow">
+										<h3 class="page-title">شرایط خرید</h3>
+										<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+											ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+											ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+											قرار گیرد.</p>
+										</div> <!-- box-container -->
+									</div> <!-- col-md-12 -->
+								</div>
+							</div>
+					<div class="customers" >
 								<div class="row">
 									<div class="col-md-12">
-										<div class="row">
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
-											</div>
-											<div class="col-lg-2 col-md-3 col-xs-4">
-												<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
-													<img src="_img/logo.png" alt="logo" class="img-responsive">
-												</a>
+										<div class="box-container box shadow">
+											<h3 class="page-title">
+												عنوان در اینجا
+											</h3>
+											<p>
+												لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+											</p>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+														<div class="col-lg-2 col-md-3 col-xs-4">
+															<a  title="شرکت" tabindex="0" role="button" data-container="body" data-trigger="focus" data-toggle="popover"  data-placement="bottom" title="Dismissible popover" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و ">
+																<img src="_img/logo.png" alt="logo" class="img-responsive">
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 				</div>
                </div>
           </div> <!-- container row -->
      </div> <!-- container -->
      <?php include "components/php/js_source.php"; ?>
 	<script type="text/javascript">
-		$('tbody').rowlink()
-		$('#datepicker').datepicker();
 		$('#datepicker').on('blur', function() {
 			$(this).removeClass('datepicker-selected');
 			$('#datepickerfromContainer').removeClass('datepicker-container');

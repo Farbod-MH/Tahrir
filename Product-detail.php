@@ -52,9 +52,13 @@
 								</div>
 								<div class="col-xs-3 col-sm-12">
 									<a href="http://placehold.it/620x620" data-toggle="lightbox" data-gallery="products-gallery" data-type="image">
-										<img src="http://placehold.it/300x300" class="img-responsive">
+										<img src="_img/_SVG/more-button.svg" class="img-more-btn img-responsive">
 									</a>
 								</div>
+								<div data-toggle="lightbox" data-gallery="products-gallery" data-remote="http://placehold.it/620x620" data-type="image"></div>
+								<div data-toggle="lightbox" data-gallery="products-gallery" data-remote="http://placehold.it/620x620" data-type="image"></div>
+								<div data-toggle="lightbox" data-gallery="products-gallery" data-remote="http://placehold.it/620x620" data-type="image"></div>
+								<div data-toggle="lightbox" data-gallery="products-gallery" data-remote="http://placehold.it/620x620" data-type="image"></div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-9 pull-left">
