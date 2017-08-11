@@ -2,11 +2,11 @@
 	<nav id="sidebar" class="sidebar navmenu navmenu-default navbar-default navmenu-fixed-right offcanvas-sm shadow">
 		<div class="sidebar-container">
 			<!-- firefox bug -->
-			<div class="menu-container">
+
 				<div class="row">
 					<div class="navbar-header navmenu-brand visible-md visible-lg">
 						<a href="price.php" title="تحریر سنتر">
-							<img src="_img/logo.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
+							<img src="_img/logo-eng.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
 						</a>
 					</div>
 				</div>
@@ -194,7 +194,7 @@
 
 					<li>
 						<span class="list-item-icon chart-icon"></span>
-						<a title="استعلام قیمت"  href="index#price">  استعلام قیمت<span class="arrow-right"></span></a>
+						<a title="استعلام قیمت"  href="index">  استعلام قیمت<span class="arrow-right"></span></a>
 					</li>
 					<li class="dropdown">
 						<span class="list-item-icon products-icon"></span>
@@ -206,19 +206,26 @@
 							<li><a title="پونس" href="products.php">پونس<span class="arrow-right"></span></a></li>
 							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
 							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
+							<li><a title="ورق" href="products.php">ورق<span class="arrow-right"></span></a></li>
+							<li><a title="میز اداری" href="products.php">میز اداری<span class="arrow-right"></span></a></li>
+							<li><a title="پونس" href="products.php">پونس<span class="arrow-right"></span></a></li>
+							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
+							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
+							<li><a title="ورق" href="products.php">ورق<span class="arrow-right"></span></a></li>
+							<li><a title="میز اداری" href="products.php">میز اداری<span class="arrow-right"></span></a></li>
+							<li><a title="پونس" href="products.php">پونس<span class="arrow-right"></span></a></li>
+							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
+							<li><a title="نوشت افزار" href="products.php">نوشت افزار<span class="arrow-right"></span></a></li>
 						</ul>
 					</li>
 					<li>
-						<span class="list-item-icon about-us-icon"></span><a title="درباره ما" href="index#about-us-page"> درباره ما<span class="arrow-right"></span></a>
+						<span class="list-item-icon about-us-icon"></span><a title="درباره ما" href="about_us"> درباره ما<span class="arrow-right"></span></a>
 					</li>
 					<li>
-						<span class="list-item-icon rules-icon"></span><a title="قوانین و مقررات" href="index#page-rules"> قوانین و مقررات<span class="arrow-right"></span></a>
-					</li>
-					<li>
-						<span class="list-item-icon about-us-icon"></span><a title="مشتریان ما" href="index#customers">مشتریان ما<span class="arrow-right"></span></a>
+						<span class="list-item-icon rules-icon"></span><a title="راهنمای سایت" href="help">راهنمای سایت<span class="arrow-right"></span></a>
 					</li>
 				</ul>
-			</div>
+
 			<div class="footer">
 				<div class="row">
 					<div class="col-xs-12">
@@ -235,11 +242,11 @@
 	<!-- navbar header for viewports smaller than 992px -->
 	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg shadow">
 		<div class="navbar-header navmenu-brand">
-			<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<a type="button" class=" hamburger">
 				<span class="line"></span>
            		<span class="line"></span>
            		<span class="line"></span>
-			  </button>
+			</a>
 			<a title="نحریر سنتر" href="price.php">
 				<img src="_img/logo-eng.png" alt="logo of tahrir center" class="img-responsive navbar-brand">
 			</a>

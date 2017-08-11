@@ -69,36 +69,35 @@
 									</p>
 								</div>
 								<div class="row">
-									<form action="">
-		                                        <div class="col-xs-12">
-		                                             <div class="row">
-		                                             	<div class="col-xs-3">
-		                                                  	<input type="text" class="input-center text-center product-quantity" placeholder="تعداد">
-		                                             	</div>
-		                                             	<div class="col-xs-6">
-		                                                  	<select name="product-package" title="واحد شمارش" class="form-control selectpicker product-package">
+									<div action="">
+										<div class="col-xs-12">
+											<div class="row">
+												<div class="col-xs-3">
+													<input type="text" class="input-center text-center product-quantity" placeholder="تعداد">
+												</div>
+												<div class="col-xs-6">
+													<select name="product-package" title="واحد شمارش" class="form-control selectpicker product-package">
 			                                                       <option value="6">جین</option>
 			                                                       <option value="12">دوجین</option>
 		                                                  	</select>
-		                                             	</div>
-		                                             	<div class="col-xs-3">
-		                                                  	<p>
-		                                                       	<span class="product-final">
+												</div>
+												<div class="col-xs-3">
+													<p>
+														<span class="product-final">
 		                                                       	     0
-		                                                       	</span>
-		                                                       	عدد
-		                                                  	</p>
+		                                                       	</span> عدد
+													</p>
 
-		                                             	</div>
-		                                        	</div>
-		                                   	</div>
-		                                        <div class="col-xs-12">
-		                                             <button type="submit" class="btn btn-block btn-success">
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<button type="submit" class="btn btn-block btn-success">
 		                                                  <img src="_img/_svg/cart.svg" alt="" width="30px">
 		                                                  افزودن به سبد خرید
 		                                             </button>
-		                                        </div>
-		                                   </form>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -114,40 +113,40 @@
 						<div role="tabpanel" class="tab-pane active" id="description">
 							<div class="specs">
 								<table class="table table-responsive">
-								<caption>مشخصات محصول:</caption>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-								<tr>
-									<th>رنگ</th>
-									<td>قرمز</td>
-								</tr>
-							</table>
+									<caption>مشخصات محصول:</caption>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+									<tr>
+										<th>رنگ</th>
+										<td>قرمز</td>
+									</tr>
+								</table>
 							</div>
 							<div class="description-container">
 								<h3>توضیحات:</h3>
@@ -165,7 +164,7 @@
 						</div>
 						<div role="tabpanel" class="tab-pane" id="condition">شرایط خرید</div>
 						<div role="tabpanel" class="tab-pane chart-container" id="price-change">
-							<div id="chartdiv" class="serial-chart" ></div>
+							<div id="chartdiv" class="serial-chart"></div>
 						</div>
 					</div>
 				</div>
@@ -286,14 +285,21 @@
 	<script type="text/javascript" src="_js/ekko-lightbox.min.js"></script>
 	<script type="text/javascript" src="_js/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
+		$(function() {
 			var hash = window.location.hash;
 			hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-			$('.nav-tabs a').click(function (e) {
-			$(this).tab('show');
-			var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-			window.location.hash = this.hash;
-			$('html,body').scrollTop(scrollmem);
+			$('.nav-tabs a').click(function(e) {
+				e.preventDefault();
+				$(this).tab('show');
+				// var scrollmem = $('.nav-tabs').scrollTop();
+				// window.location.hash = this.hash;
+				// $('.nav-tabs').scrollTop(scrollmem);
+			});
+			$('.nav-tabs a').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').stop().animate({
+					scrollTop: $('.tab-pane').offset().top - 280
+				}, 'slow');
 			});
 		});
 	</script>
@@ -305,13 +311,13 @@
 				loadingMessage: '<div class="ekko-lightbox-loader"><div><div></div><div>wait</div></div></div>'
 			});
 		});
-		$(".product-quantity").on('input', function(){
+		$(".product-quantity").on('input', function() {
 			var $this = $(this);
 			var values = $this.val();
 			var quantity = $this.closest('.row').find('.product-package').selectpicker('val');
 			$this.closest('.row').find('.product-final').text(values * quantity);
 		})
-		$( ".product-package" ).change(function() {
+		$(".product-package").change(function() {
 			var $this = $(this);
 			var values = $this.selectpicker('val');
 			var quantity = $this.closest('.row').find('.product-quantity').val();
@@ -319,14 +325,14 @@
 		});
 		$(document).ready(function() {
 			//Enable swiping...
-			$(".carousel-inner").swipe( {
-				swipeLeft:function(event, direction, distance, duration, fingerCount) {
+			$(".carousel-inner").swipe({
+				swipeLeft: function(event, direction, distance, duration, fingerCount) {
 					$(this).parent().carousel('next');
 				},
 				swipeRight: function() {
 					$(this).parent().carousel('prev');
 				},
-				threshold:75
+				threshold: 75
 			});
 		});
 	</script>
@@ -336,22 +342,22 @@
 	<script type="text/javascript">
 		function formatNumbers(value) {
 			var persian = {
-			0: '۰',
-			1: '۱',
-			2: '۲',
-			3: '۳',
-			4: '۴',
-			5: '۵',
-			6: '۶',
-			7: '۷',
-			8: '۸',
-			9: '۹'
+				0: '۰',
+				1: '۱',
+				2: '۲',
+				3: '۳',
+				4: '۴',
+				5: '۵',
+				6: '۶',
+				7: '۷',
+				8: '۸',
+				9: '۹'
 			};
 			var res = String(value);
 			var list = res.match(/[0-9]/g);
 			if (list != null && list.length != 0) {
 				for (var i = 0; i < list.length; i++)
-				res = res.replace(list[i], persian[list[i]]);
+					res = res.replace(list[i], persian[list[i]]);
 			}
 			return res;
 		}
@@ -362,134 +368,126 @@
 		}
 	</script>
 	<script type="text/javascript">
-		AmCharts.makeChart("chartdiv",
-			{
-				"type": "serial",
-				"categoryField": "date",
-				"dataDateFormat": "YYYY-MM-DD",
-				"colors": [
-					"#003366",
-					"#007d00",
-					"#FF6600",
-					"#FCD202",
-					"#B0DE09",
-					"#0D8ECF",
-					"#2A0CD0",
-					"#CD0D74",
-					"#CC0000",
-					"#00CC00",
-					"#0000CC",
-					"#DDDDDD",
-					"#999999",
-					"#333333",
-					"#990000"
-				],
-				"accessibleTitle": "نوسان قیمت",
-				"fontFamily": "IRANSans",
-				"color" : "#484848",
-				"fontWeight" : "normal",
-				"categoryAxis": {
-					"parseDates": true,
-					"titleBold": false,
-					"boldPeriodBeginning": false,
-					"labelFunction": function(label, item) {
-						return formatNumbers(label);
-					}
+		AmCharts.makeChart("chartdiv", {
+			"type": "serial",
+			"categoryField": "date",
+			"dataDateFormat": "YYYY-MM-DD",
+			"colors": [
+				"#003366",
+				"#007d00",
+				"#FF6600",
+				"#FCD202",
+				"#B0DE09",
+				"#0D8ECF",
+				"#2A0CD0",
+				"#CD0D74",
+				"#CC0000",
+				"#00CC00",
+				"#0000CC",
+				"#DDDDDD",
+				"#999999",
+				"#333333",
+				"#990000"
+			],
+			"accessibleTitle": "نوسان قیمت",
+			"fontFamily": "IRANSans",
+			"color": "#484848",
+			"fontWeight": "normal",
+			"categoryAxis": {
+				"parseDates": true,
+				"titleBold": false,
+				"boldPeriodBeginning": false,
+				"labelFunction": function(label, item) {
+					return formatNumbers(label);
+				}
+			},
+			"chartCursor": {
+				"enabled": true,
+				"categoryBalloonDateFormat": "DD MMM  ",
+				"categoryBalloonText": "[[category]] "
+			},
+			"trendLines": [],
+			"graphs": [{
+					"balloonText": "<span>ریال</span> [[value]]",
+					"bullet": "round",
+					"id": "AmGraph-1",
+					"title": "گارانتی 1",
+					"type": "smoothedLine",
+					"valueField": "column-1",
 				},
-				"chartCursor": {
-					"enabled": true,
-					"categoryBalloonDateFormat": "DD MMM  ",
-					"categoryBalloonText": "[[category]] "
+				{
+					"balloonText": " <span>ریال</span> [[value]]",
+					"bullet": "round",
+					"id": "AmGraph-2",
+					"title": "گارانتی 2",
+					"type": "smoothedLine",
+					"valueField": "column-2"
+				}
+			],
+			"guides": [],
+			"valueAxes": [{
+				"id": "ValueAxis-1",
+				"title": "قیمت",
+				"titleBold": false,
+				"titleRotation": -1,
+				"labelFunction": function(label, item) {
+					return formatNumbers(label);
+				}
+			}],
+			"allLabels": [],
+			"balloon": {
+				"textAlign": "left",
+			},
+			"legend": {
+				"enabled": true,
+				"switchable": false,
+				"textClickEnabled": true,
+				"maxColumns": 3,
+				"useGraphSettings": true,
+				"valueAlign": "left",
+			},
+			"responsive": {
+				"enabled": true,
+			},
+			"titles": [{
+				"id": "Title-1",
+				"size": 14,
+				"text": "نوسان قیمت",
+				"color": "#003366",
+			}],
+			"dataProvider": [{
+					"date": "1396-03-01",
+					"column-1": 8,
+					"column-2": 49
 				},
-				"trendLines": [],
-				"graphs": [
-					{
-						"balloonText": "<span>ریال</span> [[value]]",
-						"bullet": "round",
-						"id": "AmGraph-1",
-						"title": "گارانتی 1",
-						"type": "smoothedLine",
-						"valueField": "column-1",
-					},
-					{
-						"balloonText": " <span>ریال</span> [[value]]",
-						"bullet": "round",
-						"id": "AmGraph-2",
-						"title": "گارانتی 2",
-						"type": "smoothedLine",
-						"valueField": "column-2"
-					}
-				],
-				"guides": [],
-				"valueAxes": [
-					{
-						"id": "ValueAxis-1",
-						"title": "قیمت",
-						"titleBold": false,
-						"titleRotation": -1,
-						"labelFunction": function(label, item) {
-      						return formatNumbers(label);
-    						}
-					}
-				],
-				"allLabels": [],
-				"balloon": {
-					"textAlign": "left",
+				{
+					"date": "1396-03-02",
+					"column-1": 6,
+					"column-2": 98
 				},
-				"legend": {
-					"enabled": true,
-					"switchable": false,
-					"textClickEnabled": true,
-					"maxColumns": 3,
-					"useGraphSettings": true,
-					"valueAlign": "left",
+				{
+					"date": "1396-03-03",
+					"column-1": 2,
+					"column-2": 44
 				},
-				"responsive": {
-		            "enabled": true,
-			  	},
-				"titles": [
-					{
-						"id": "Title-1",
-						"size": 14,
-						"text": "نوسان قیمت",
-						"color": "#003366",
-					}
-				],
-				"dataProvider": [
-					{
-						"date": "1396-03-01",
-						"column-1": 8,
-						"column-2": 49
-					},
-					{
-						"date": "1396-03-02",
-						"column-1": 6,
-						"column-2": 98
-					},
-					{
-						"date": "1396-03-03",
-						"column-1": 2,
-						"column-2": 44
-					},
-					{
-						"date": "1396-03-04",
-						"column-1": 1,
-						"column-2": 2
-					},
-					{
-						"date": "1396-03-05",
-						"column-1": 2,
-						"column-2": 38
-					},
-					{
-						"date": "1396-03-06",
-						"column-1": 3,
-						"column-2": 26
-					},
+				{
+					"date": "1396-03-04",
+					"column-1": 1,
+					"column-2": 2
+				},
+				{
+					"date": "1396-03-05",
+					"column-1": 2,
+					"column-2": 38
+				},
+				{
+					"date": "1396-03-06",
+					"column-1": 3,
+					"column-2": 26
+				},
 
-				]
-			}
-		);
+			]
+		});
 	</script>
 </body>
 
